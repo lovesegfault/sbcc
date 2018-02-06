@@ -1,0 +1,149 @@
+\documentclass{article}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Lecture Specific Information to Fill Out
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \newcommand{\LectureTitle}{Lecture \#5 Notes}
+    %\newcommand{\LectureDate}{\today}
+    \newcommand{\LectureDate}{September\ 11,\ 2017}
+    \newcommand{\LectureClassName}{PHIL\ 201}
+    \newcommand{\LatexerName}{Bernardo\ Meurer}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    % Change "article" to "report" to get rid of page number on title page
+    
+    \usepackage[utf8]{inputenc}
+    \usepackage{amsmath,amsfonts,amsthm,amssymb}
+    \usepackage{setspace}
+    \usepackage{Tabbing}
+    \usepackage{fancyhdr}
+    \usepackage{lastpage}
+    \usepackage{extramarks}
+    \usepackage{chngpage}
+    \usepackage{soul,color}
+    \usepackage{graphicx,float,wrapfig}
+    \usepackage{afterpage}
+    \usepackage{abstract}
+    
+    % In case you need to adjust margins:
+    \topmargin=-0.45in
+    \evensidemargin=0in
+    \oddsidemargin=0in
+    \textwidth=6.5in
+    \textheight=9.0in
+    \headsep=0.25in
+    
+    % Setup the header and footer
+    \pagestyle{fancy}
+    \lhead{\LatexerName}
+    \chead{\LectureClassName: \LectureTitle}
+    \rhead{\LectureDate}
+    \lfoot{\lastxmark}
+    \cfoot{}
+    \rfoot{Page\ \thepage\ of\ \pageref{LastPage}}
+    \renewcommand\headrulewidth{0.4pt}
+    \renewcommand\footrulewidth{0.4pt}
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Some tools
+    \newcommand{\enterTopicHeader}[1]{\nobreak\extramarks{#1}{#1 continued on next page\ldots}\nobreak%
+                                        \nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak}
+    \newcommand{\exitTopicHeader}[1]{\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak%
+                                       \nobreak\extramarks{#1}{}\nobreak}
+    
+    \newlength{\labelLength}
+    \newcommand{\labelAnswer}[2]
+      {\settowidth{\labelLength}{#1}
+       \addtolength{\labelLength}{0.25in}
+       \changetext{}{-\labelLength}{}{}{}
+       \noindent\fbox{\begin{minipage}[c]{\columnwidth}#2\end{minipage}}
+       \marginpar{\fbox{#1}}
+    
+       % We put the blank space above in order to make sure this
+       % \marginpar gets correctly placed.
+       \changetext{}{+\labelLength}{}{}{}}
+    
+    \setcounter{secnumdepth}{0}
+    \newcommand{\TopicName}{}
+    \newcounter{TopicCounter}
+    \newenvironment{Topic}[1][Problem \arabic{TopicCounter}]
+      {\stepcounter{TopicCounter}
+       \renewcommand{\TopicName}{#1}
+       \section{\TopicName}
+       \enterTopicHeader{\TopicName}}
+      {\exitTopicHeader{\TopicName}}
+    
+    \setcounter{secnumdepth}{0}
+    \newcommand{\ExampleSectionName}{}
+    \newcounter{ExampleSectionCounter}[TopicCounter]
+    \newenvironment{ExampleSection}[1][Example \arabic{ExampleSectionCounter}]
+      {\stepcounter{ExampleSectionCounter}
+       \renewcommand{\ExampleSectionName}{#1}
+       \section{\ExampleSectionName}
+       \enterTopicHeader{\ExampleSectionName}}
+      {\exitTopicHeader{\ExampleSectionName}}
+    
+    \setcounter{secnumdepth}{0}
+    \newcounter{ExampleBoxCounter}[TopicCounter]
+    \newcommand{\examplebox}[1]
+      {
+      % We put this space here to make sure we're disconnected from the previous
+       % passage
+       \stepcounter{ExampleBoxCounter}
+       \noindent\fbox{\begin{minipage}[c]{\columnwidth}#1\end{minipage}}\enterTopicHeader{\ExampleSectionName}\exitTopicHeader{\ExampleSectionName}\marginpar{\fbox{\#\arabic{ExampleBoxCounter}}}
+       % We put the blank space above in order to make sure this
+       % \marginpar gets correctly placed.
+       \vskip10pt%
+       }
+    
+    \renewcommand{\contentsname}{{\normalsize Topics Covered}}
+    \renewcommand{\abstractname}{\LectureTitle\ Summary}
+    \renewcommand{\absnamepos}{flushleft}
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    \begin{document}
+    \begin{spacing}{1.2}
+    \newpage
+    \section{Meditation III}
+
+    Descartes is, fundamentally, trying to prove that there can be knowledge apart from the recognition of his own existence. A candidate for such knowledge is everything that one realizes from ``clear and distinct perception''. He argues that CDP is only valid if:
+    \begin{enumerate}
+        \item God exists
+        \item He's not a deceiver
+    \end{enumerate}
+
+    He then proceeds to prove the existence of God by using CDP, which is an 
+    inconsistency. This circular dependency is called the 
+    ``Cartesian Circle''. The logic steps to this are as follows
+    \begin{itemize}
+        \item He has an idea of God
+        \item It couldn't have come from himself or from others...
+        \item An effect needs a cause with as much perfection/reality as that which it caused.
+        \item it could only have come from God!
+        \begin{itemize}
+            \item God is eternal, infinite, omnipotent, omniscient, immutable, etc ...
+        \end{itemize}
+    \end{itemize}
+    \section{Meditation IV}
+
+    In Meditation IV Descartes discusses the power of judgment. 
+    \begin{quotation}
+        ``God has certainly made me such that if I use this power properly, I will never make a mistake [in judgment].''
+    \end{quotation}
+
+    However, he \emph{does} make mistakes in judgement, which is the motif for this Meditation, to explain the origin of error without blaming God.
+
+    \begin{quotation}
+        ``Judging involves a perception of the understanding, plus a voluntary act of affirmation or denial.''
+    \end{quotation}
+
+    \textbf{Judgment}
+    \begin{itemize}
+        \item Intellect (The power to know)
+        \item Will (The power to choose)
+    \end{itemize}
+    
+    He argues that errors occur because although the intellect, your knowledge, is finite, limited, your will is infinite. Descartes goes as far as to say that man's will is infinite like God's.
+
+    \end{spacing}
+    \end{document}

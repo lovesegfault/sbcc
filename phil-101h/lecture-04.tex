@@ -1,0 +1,152 @@
+\documentclass{article}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Lecture Specific Information to Fill Out
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \newcommand{\LectureTitle}{Lecture \#4 Notes}
+    %\newcommand{\LectureDate}{\today}
+    \newcommand{\LectureDate}{February\ 05,\ 2017}
+    \newcommand{\LectureClassName}{PHIL\ 101H}
+    \newcommand{\LatexerName}{Bernardo\ Meurer}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    % Change "article" to "report" to get rid of page number on title page
+    \usepackage{amsmath,amsfonts,amsthm,amssymb}
+    \usepackage{setspace}
+    \usepackage{Tabbing}
+    \usepackage{fancyhdr}
+    \usepackage{lastpage}
+    \usepackage{extramarks}
+    \usepackage{chngpage}
+    \usepackage{soul,color}
+    \usepackage{graphicx,float,wrapfig}
+    \usepackage{afterpage}
+    \usepackage{abstract}
+    \usepackage[margin=1in]{geometry}
+    \usepackage{syllogism}
+
+
+    % Setup the header and footer
+    \pagestyle{fancy}
+    \lhead{\LatexerName}
+    \chead{\LectureClassName: \LectureTitle}
+    \rhead{\LectureDate}
+    \lfoot{\lastxmark}
+    \cfoot{}
+    \rfoot{Page\ \thepage\ of\ \pageref{LastPage}}
+    \renewcommand\headrulewidth{0.4pt}
+    \renewcommand\footrulewidth{0.4pt}
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Some tools
+    \newcommand{\enterTopicHeader}[1]{\nobreak\extramarks{#1}{#1 continued on next page\ldots}\nobreak%
+    \nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak}
+\newcommand{\exitTopicHeader}[1]{\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak%
+   \nobreak\extramarks{#1}{}\nobreak}
+
+\newlength{\labelLength}
+\newcommand{\labelAnswer}[2]
+{\settowidth{\labelLength}{#1}
+\addtolength{\labelLength}{0.25in}
+\changetext{}{-\labelLength}{}{}{}
+\noindent\fbox{\begin{minipage}[c]{\columnwidth}#2\end{minipage}}
+\marginpar{\fbox{#1}}
+
+% We put the blank space above in order to make sure this
+% \marginpar gets correctly placed.
+\changetext{}{+\labelLength}{}{}{}}
+
+\setcounter{secnumdepth}{0}
+\newcommand{\TopicName}{}
+\newcounter{TopicCounter}
+\newenvironment{Topic}[1][Problem \arabic{TopicCounter}]
+{\stepcounter{TopicCounter}
+\renewcommand{\TopicName}{#1}
+\section{\TopicName}
+\enterTopicHeader{\TopicName}}
+{\exitTopicHeader{\TopicName}}
+
+\setcounter{secnumdepth}{0}
+\newcommand{\ExampleSectionName}{}
+\newcounter{ExampleSectionCounter}[TopicCounter]
+\newenvironment{ExampleSection}[1][Example \arabic{ExampleSectionCounter}]
+{\stepcounter{ExampleSectionCounter}
+\renewcommand{\ExampleSectionName}{#1}
+\section{\ExampleSectionName}
+\enterTopicHeader{\ExampleSectionName}}
+{\exitTopicHeader{\ExampleSectionName}}
+
+\setcounter{secnumdepth}{0}
+\newcounter{ExampleBoxCounter}[TopicCounter]
+\newcommand{\examplebox}[1]
+{
+% We put this space here to make sure we're disconnected from the previous
+% passage
+\stepcounter{ExampleBoxCounter}
+\noindent\fbox{\begin{minipage}[c]{\columnwidth}#1\end{minipage}}\enterTopicHeader{\ExampleSectionName}\exitTopicHeader{\ExampleSectionName}\marginpar{\fbox{\#\arabic{ExampleBoxCounter}}}
+% We put the blank space above in order to make sure this
+% \marginpar gets correctly placed.
+\vskip10pt%
+}
+
+\renewcommand{\contentsname}{{\normalsize Topics Covered}}
+\renewcommand{\abstractname}{\LectureTitle\ Summary}
+\renewcommand{\absnamepos}{flushleft}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{spacing}{1.2}
+    \newpage
+    \begin{itemize}
+        \item Hypothetical Imperatives
+        \begin{itemize}
+            \item Write a love letter
+            \item Study hard for a class
+            \begin{itemize}
+                \item You can escape this command by just changing your desire, and accepting being comfortable with a bad grade.
+            \end{itemize}
+            \item All rules of etiquette
+            \begin{itemize}
+                \item Wearing shoes
+                \item Forks on the left side of the plate
+                \item \ldots
+            \end{itemize}
+            \item You have a \emph{desire}, you recognize that a certain course of action would help you get what you desire. So you conclude that you should follow the indicated plan.
+            \item There are \emph{hypothetical} Imperatives because you can escape them by just renouncing the desire.
+        \end{itemize}
+        \item Categorical Imperatives
+        \begin{itemize}
+            \item \emph{Moral} requirements are different; they are not hypothetical Imperatives
+            \item You can't just escape a moral command by renouncing the relevant desire.
+            \item Moral requirements are \emph{Categorical}. They are \emph{absolute}. No matter what feelings, desires, and inclinations happen to be, and even what immediate consequences of your action might be, you should, for example, try to help needy people.
+        \end{itemize}
+        \item What makes us moral?
+        \begin{itemize}
+            \item That we have \emph{good will}.
+            \item Good will means having the right \emph{intentions}
+            \item Consider the case of Abdullah and Leon
+        \end{itemize}
+        \item Good will
+        \begin{itemize}
+            \item How can we be sure that, like Abdullah, our will is good?
+            \item For Kant all our (free) actions are connected to intentions (motives, plans of action).
+        \end{itemize}
+        \item Categorical Imperative
+        \begin{itemize}
+            \item Kant thinks that the right motives are derives from a principle that every rational person must accept. He calls this the \emph{Categorical Imperative}
+            \item From the Categorical Imperative that we are able to derive, we have Categorical imperatives (moral rules that we ought to follow).
+            \item Kant formulates this in several ways. We will look at only two:
+            \begin{itemize}
+                \item The Universal Law of Formulation (UL)
+                \item Humanity Formulation (H)
+            \end{itemize}
+            \item If you really think some act is moral, you should have no problem with everyone doing it. If it's a moral thing to do, shouldn't you rationally will everyone to do it?
+            \item Act only according to the maxim by which you can at the same time will that it should become a universal law.
+            \item UL --- An action is right iff one can;
+            \begin{itemize}
+                \item Consistently conceive of everyone adopting and acting on a general policy of one's action
+                \item Consistently will that everyone act on that maxim
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+\end{spacing}
+\end{document}

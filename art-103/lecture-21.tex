@@ -1,0 +1,147 @@
+\documentclass{article}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Lecture Specific Information to Fill Out
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \newcommand{\LectureTitle}{Lecture \#21 Notes}
+    %\newcommand{\LectureDate}{\today}
+    \newcommand{\LectureDate}{November\ 13,\ 2017}
+    \newcommand{\LectureClassName}{ART\ 103}
+    \newcommand{\LatexerName}{Bernardo\ Meurer}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    % Change "article" to "report" to get rid of page number on title page
+    \usepackage{amsmath,amsfonts,amsthm,amssymb}
+    \usepackage{setspace}
+    \usepackage{Tabbing}
+    \usepackage{fancyhdr}
+    \usepackage{lastpage}
+    \usepackage{extramarks}
+    \usepackage{chngpage}
+    \usepackage{soul,color}
+    \usepackage{graphicx,float,wrapfig}
+    \usepackage{afterpage}
+    \usepackage{abstract}
+
+    % In case you need to adjust margins:
+    \topmargin=-0.45in
+    \evensidemargin=0in
+    \oddsidemargin=0in
+    \textwidth=6.5in
+    \textheight=9.0in
+    \headsep=0.25in
+
+    % Setup the header and footer
+    \pagestyle{fancy}
+    \lhead{\LatexerName}
+    \chead{\LectureClassName: \LectureTitle}
+    \rhead{\LectureDate}
+    \lfoot{\lastxmark}
+    \cfoot{}
+    \rfoot{Page\ \thepage\ of\ \pageref{LastPage}}
+    \renewcommand\headrulewidth{0.4pt}
+    \renewcommand\footrulewidth{0.4pt}
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Some tools
+    \newcommand{\enterTopicHeader}[1]{\nobreak\extramarks{#1}{#1 continued on next page\ldots}\nobreak%
+    \nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak}
+\newcommand{\exitTopicHeader}[1]{\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak%
+   \nobreak\extramarks{#1}{}\nobreak}
+
+\newlength{\labelLength}
+\newcommand{\labelAnswer}[2]
+{\settowidth{\labelLength}{#1}
+\addtolength{\labelLength}{0.25in}
+\changetext{}{-\labelLength}{}{}{}
+\noindent\fbox{\begin{minipage}[c]{\columnwidth}#2\end{minipage}}
+\marginpar{\fbox{#1}}
+
+% We put the blank space above in order to make sure this
+% \marginpar gets correctly placed.
+\changetext{}{+\labelLength}{}{}{}}
+
+\setcounter{secnumdepth}{0}
+\newcommand{\TopicName}{}
+\newcounter{TopicCounter}
+\newenvironment{Topic}[1][Problem \arabic{TopicCounter}]
+{\stepcounter{TopicCounter}
+\renewcommand{\TopicName}{#1}
+\section{\TopicName}
+\enterTopicHeader{\TopicName}}
+{\exitTopicHeader{\TopicName}}
+
+\setcounter{secnumdepth}{0}
+\newcommand{\ExampleSectionName}{}
+\newcounter{ExampleSectionCounter}[TopicCounter]
+\newenvironment{ExampleSection}[1][Example \arabic{ExampleSectionCounter}]
+{\stepcounter{ExampleSectionCounter}
+\renewcommand{\ExampleSectionName}{#1}
+\section{\ExampleSectionName}
+\enterTopicHeader{\ExampleSectionName}}
+{\exitTopicHeader{\ExampleSectionName}}
+
+\setcounter{secnumdepth}{0}
+\newcounter{ExampleBoxCounter}[TopicCounter]
+\newcommand{\examplebox}[1]
+{
+% We put this space here to make sure we're disconnected from the previous
+% passage
+\stepcounter{ExampleBoxCounter}
+\noindent\fbox{\begin{minipage}[c]{\columnwidth}#1\end{minipage}}\enterTopicHeader{\ExampleSectionName}\exitTopicHeader{\ExampleSectionName}\marginpar{\fbox{\#\arabic{ExampleBoxCounter}}}
+% We put the blank space above in order to make sure this
+% \marginpar gets correctly placed.
+\vskip10pt%
+}
+
+\renewcommand{\contentsname}{{\normalsize Topics Covered}}
+\renewcommand{\abstractname}{\LectureTitle\ Summary}
+\renewcommand{\absnamepos}{flushleft}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+    \begin{spacing}{1.2}
+    \newpage
+        (9 -- 27) The most important characteristic in the interior of Saint Mark's is that everything is labeled in both Greek and Latin, to brink the east and the west together. The figures appear really weightless,  they don't show any 3-dimensionality. There are 40,000 square feet of restored mosaic that cover the walls, arches and domes. This parekklesion is a funerary chapel.
+
+        (9 -- 29) This is a Triptych (Three panels). These are smaller shrines use for personal devotion, since they can be folded and carried.
+
+        (9 -- 30) Here it's very clear that the draping is extremely bizantine, it almost looks like a patterned piece of glass.
+
+        (9 -- 31) This one, on the other hand, is extremely Roman. We can see that the figures are much more in classical motifs. It's a completely allegorical painting, which is typical of Roman art.
+
+        (9 -- 32) This is an Icon, meaning it was meant to be carried around. The big thing here is the emotion (contrast with 9 -- 19 for example).
+
+        \subsection{Late Byzentine}
+        \begin{flushright}
+            1261 - 1453
+        \end{flushright}
+        (9 -- 33) This is an \emph{apse fresco} depicting Christ stomping on keys and locks with the devil under him. John and the Virgin are getting resurrected here, with the idea that the devil locks you into hell.
+
+        (9 -- 34) This is also an icon, with the very typical byzantine drapery.
+
+        (9 -- 36) This is very Russian in that it's strong patterns, strong lines, and they really likes strong color contrast in their icons.
+
+        \section{Early Medieval Art}
+        \begin{flushright}
+            ?? -- ??
+        \end{flushright}
+        \subsection{Art of the Warrior Lords}
+        (11 -- 3) This animalistic motif will be common to art in this period. Here we see again (as we saw in 2 -- 10) a heraldic device. This decorative patterning with very curvilinear lines is also typical of the period.
+
+        (11 -- 8) Here we see a seated poet (like 7 -- 25), an older motif being brought back. It depicts saint Matthew.
+
+        (11 -- 9) This is a Chi-Rho-Iota, the symbol of Christ.
+
+        (11 -- 11) The interesting thing here is the horseshoes arch on the entrance, which is characteristical of islamic architecture.
+
+        \subsection{Carolingian Empire}
+        \begin{flushright}
+            768 -- 877
+        \end{flushright}
+        At the death of Charlemagne his empire covered most of Europe. He was the first emperor of the Holy Roman Empire.
+
+        (11 -- 14) This is Saint Matthew in the Coronation Gospels. This particular chair is roman, and he's also wearing a toga. Again here wee see the motif of the seated poet.
+
+        (11 -- 15A) This is the Utrecht Psalter.
+    \end{spacing}
+\end{document}

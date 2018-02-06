@@ -1,0 +1,159 @@
+\documentclass{article}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Lecture Specific Information to Fill Out
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \newcommand{\LectureTitle}{Lecture \#6 Notes}
+    %\newcommand{\LectureDate}{\today}
+    \newcommand{\LectureDate}{September\ 11,\ 2017}
+    \newcommand{\LectureClassName}{ART\ 103}
+    \newcommand{\LatexerName}{Bernardo\ Meurer}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    % Change "article" to "report" to get rid of page number on title page
+    \usepackage{amsmath,amsfonts,amsthm,amssymb}
+    \usepackage{setspace}
+    \usepackage{Tabbing}
+    \usepackage{fancyhdr}
+    \usepackage{lastpage}
+    \usepackage{extramarks}
+    \usepackage{chngpage}
+    \usepackage{soul,color}
+    \usepackage{graphicx,float,wrapfig}
+    \usepackage{afterpage}
+    \usepackage{abstract}
+    
+    % In case you need to adjust margins:
+    \topmargin=-0.45in
+    \evensidemargin=0in
+    \oddsidemargin=0in
+    \textwidth=6.5in
+    \textheight=9.0in
+    \headsep=0.25in
+    
+    % Setup the header and footer
+    \pagestyle{fancy}
+    \lhead{\LatexerName}
+    \chead{\LectureClassName: \LectureTitle}
+    \rhead{\LectureDate}
+    \lfoot{\lastxmark}
+    \cfoot{}
+    \rfoot{Page\ \thepage\ of\ \pageref{LastPage}}
+    \renewcommand\headrulewidth{0.4pt}
+    \renewcommand\footrulewidth{0.4pt}
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Some tools
+    \newcommand{\enterTopicHeader}[1]{\nobreak\extramarks{#1}{#1 continued on next page\ldots}\nobreak%
+    \nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak}
+\newcommand{\exitTopicHeader}[1]{\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak%
+   \nobreak\extramarks{#1}{}\nobreak}
+
+\newlength{\labelLength}
+\newcommand{\labelAnswer}[2]
+{\settowidth{\labelLength}{#1}
+\addtolength{\labelLength}{0.25in}
+\changetext{}{-\labelLength}{}{}{}
+\noindent\fbox{\begin{minipage}[c]{\columnwidth}#2\end{minipage}}
+\marginpar{\fbox{#1}}
+
+% We put the blank space above in order to make sure this
+% \marginpar gets correctly placed.
+\changetext{}{+\labelLength}{}{}{}}
+
+\setcounter{secnumdepth}{0}
+\newcommand{\TopicName}{}
+\newcounter{TopicCounter}
+\newenvironment{Topic}[1][Problem \arabic{TopicCounter}]
+{\stepcounter{TopicCounter}
+\renewcommand{\TopicName}{#1}
+\section{\TopicName}
+\enterTopicHeader{\TopicName}}
+{\exitTopicHeader{\TopicName}}
+
+\setcounter{secnumdepth}{0}
+\newcommand{\ExampleSectionName}{}
+\newcounter{ExampleSectionCounter}[TopicCounter]
+\newenvironment{ExampleSection}[1][Example \arabic{ExampleSectionCounter}]
+{\stepcounter{ExampleSectionCounter}
+\renewcommand{\ExampleSectionName}{#1}
+\section{\ExampleSectionName}
+\enterTopicHeader{\ExampleSectionName}}
+{\exitTopicHeader{\ExampleSectionName}}
+
+\setcounter{secnumdepth}{0}
+\newcounter{ExampleBoxCounter}[TopicCounter]
+\newcommand{\examplebox}[1]
+{
+% We put this space here to make sure we're disconnected from the previous
+% passage
+\stepcounter{ExampleBoxCounter}
+\noindent\fbox{\begin{minipage}[c]{\columnwidth}#1\end{minipage}}\enterTopicHeader{\ExampleSectionName}\exitTopicHeader{\ExampleSectionName}\marginpar{\fbox{\#\arabic{ExampleBoxCounter}}}
+% We put the blank space above in order to make sure this
+% \marginpar gets correctly placed.
+\vskip10pt%
+}
+
+\renewcommand{\contentsname}{{\normalsize Topics Covered}}
+\renewcommand{\abstractname}{\LectureTitle\ Summary}
+\renewcommand{\absnamepos}{flushleft}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{document}
+    \begin{spacing}{1.2}
+    \newpage
+    \section{Egypt}
+    \subsection{Narmer to Cleopatra}
+    When we talk about Egypt, we have to talk about the idea of immortality, because it's a huge idea with the Egyptians. Immortality and death is an important theme in their architecture and art.
+    Another pivotal point in egyptian culture is the Nile. It is important to remember the flooding behavior of the river, since the society operated around the flooding seasons.
+    
+    %\paragraph{Predynastic \& Early Dynastic Periods 3500 -- 2575 BCE}
+    
+    (3 -- 2) This palette, we believe, was used for mixing the coal and water 
+    that the egyptians used around their eyes. It is believed that they painted 
+    their eyes to reduce the reflection of light into their eyes. King Narmar 
+    united lower and upper egypt, and that is represented in this palette by 
+    the lions with uniting necks. Also, he is depicted wearing the crowns of 
+    both lower and upper egypt. As in Mesopotamian art, the Egyptian artist's portrayal of Narmar combines both frontal and profile views.
+
+    (3 -- 5) Imhotep was the builder to king Djoser, and he's the first 
+    recorded name of an artist in the world. These are his stepped pyramids, 
+    the idea of making pyramids came from the wish for something grander and 
+    more durable. These are different than the ones we found in Mesopotamia, 
+    they were meant to protect the deceased's tomb, and to allow for his \emph
+    {ka}\footnote{Soul} to go in and out of the tomb. The pyramid was part of a 
+    much larger complex (3 --6), and access to it was extremely limited.
+    (3 -- 7) In these columns we can see the resemblance to the papyrus, both 
+    in the fact that they have three sides, as well as their conical top. Also 
+    important to notice is that these are \emph{engaged columns}, meaning they 
+    are not freestanding, and instead are embedded into the wall.
+    
+    \subsection{The Old Kingdom}
+    \begin{flushright}
+        ca. 2500 BCE
+    \end{flushright}
+    (3 -- 8) Here, in the Great Pyramids of Gizeh, we see that the sides are 
+    now ``smoothly'' triangular. The new tomb reflects the shape of the 
+    influence of Heliopolis, the seat of the powerful cult of \emph{Re}, the 
+    Sun God, his symbol was a pyramidal stone. The four sides of the pyramid, 
+    like Djoser's pyramid, are oriented according to the four cardinal 
+    directions. The Sun's rays were the ramps that they believed the sould used 
+    to ascend to the heavens. There is a lot of debate on how they were built. 
+    One of the common theories is that they used tree trunks to roll the blocks 
+    from the nile, and then built ramps to raise the blocks. It is important to note that the pyramids are part of a Necropolis, involving tombs for family members and the Great Sphinx.
+
+    (3 -- 11) The Great Sphinx was carved out of a static rock formation, which 
+    leads us to believe there was a quarry in the neighborhood. The lion body 
+    was associated with the Sun God as well.
+    
+    (3 -- 12) This is Khafre enthroned, it was carved out of Diorite which, as 
+    we noted earlier in (2 -- 16), is an extremely hard material. We can 
+    observe in Khafre's head the same sort of hat and beard as is present in 
+    the Sphinx.
+
+    (3 -- 13) We believe this to be Menkaure and Khamerernebty, although there 
+    is a discussion whether the female figure is actually the divine mother of 
+    all Kings. There are traces of pain left on this.
+
+    (3 -- 14) Here we can see a sculpture of a seated scribe. We know this is \emph{not} someone of importance due to the fact that he's seating on the ground, he's not as idealized (has a tummy), looks older, and he has no crown, staff, or symbol of power.
+\end{spacing}
+    \end{document}

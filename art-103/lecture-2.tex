@@ -1,0 +1,170 @@
+\documentclass{article}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Lecture Specific Information to Fill Out
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \newcommand{\LectureTitle}{Lecture \#2 Notes}
+    %\newcommand{\LectureDate}{\today}
+    \newcommand{\LectureDate}{August\ 28,\ 2017}
+    \newcommand{\LectureClassName}{ART\ 103}
+    \newcommand{\LatexerName}{Bernardo\ Meurer}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    % Change "article" to "report" to get rid of page number on title page
+    \usepackage{amsmath,amsfonts,amsthm,amssymb}
+    \usepackage{setspace}
+    \usepackage{Tabbing}
+    \usepackage{fancyhdr}
+    \usepackage{lastpage}
+    \usepackage{extramarks}
+    \usepackage{chngpage}
+    \usepackage{soul,color}
+    \usepackage{graphicx,float,wrapfig}
+    \usepackage{afterpage}
+    \usepackage{abstract}
+    
+    % In case you need to adjust margins:
+    \topmargin=-0.45in
+    \evensidemargin=0in
+    \oddsidemargin=0in
+    \textwidth=6.5in
+    \textheight=9.0in
+    \headsep=0.25in
+    
+    % Setup the header and footer
+    \pagestyle{fancy}
+    \lhead{\LatexerName}
+    \chead{\LectureClassName: \LectureTitle}
+    \rhead{\LectureDate}
+    \lfoot{\lastxmark}
+    \cfoot{}
+    \rfoot{Page\ \thepage\ of\ \pageref{LastPage}}
+    \renewcommand\headrulewidth{0.4pt}
+    \renewcommand\footrulewidth{0.4pt}
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Some tools
+    \newcommand{\enterTopicHeader}[1]{\nobreak\extramarks{#1}{#1 continued on next page\ldots}\nobreak%
+                                        \nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak}
+    \newcommand{\exitTopicHeader}[1]{\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak%
+                                       \nobreak\extramarks{#1}{}\nobreak}
+    
+    \newlength{\labelLength}
+    \newcommand{\labelAnswer}[2]
+      {\settowidth{\labelLength}{#1}
+       \addtolength{\labelLength}{0.25in}
+       \changetext{}{-\labelLength}{}{}{}
+       \noindent\fbox{\begin{minipage}[c]{\columnwidth}#2\end{minipage}}
+       \marginpar{\fbox{#1}}
+    
+       % We put the blank space above in order to make sure this
+       % \marginpar gets correctly placed.
+       \changetext{}{+\labelLength}{}{}{}}
+    
+    \setcounter{secnumdepth}{0}
+    \newcommand{\TopicName}{}
+    \newcounter{TopicCounter}
+    \newenvironment{Topic}[1][Problem \arabic{TopicCounter}]
+      {\stepcounter{TopicCounter}
+       \renewcommand{\TopicName}{#1}
+       \section{\TopicName}
+       \enterTopicHeader{\TopicName}}
+      {\exitTopicHeader{\TopicName}}
+    
+    \setcounter{secnumdepth}{0}
+    \newcommand{\ExampleSectionName}{}
+    \newcounter{ExampleSectionCounter}[TopicCounter]
+    \newenvironment{ExampleSection}[1][Example \arabic{ExampleSectionCounter}]
+      {\stepcounter{ExampleSectionCounter}
+       \renewcommand{\ExampleSectionName}{#1}
+       \section{\ExampleSectionName}
+       \enterTopicHeader{\ExampleSectionName}}
+      {\exitTopicHeader{\ExampleSectionName}}
+    
+    \setcounter{secnumdepth}{0}
+    \newcounter{ExampleBoxCounter}[TopicCounter]
+    \newcommand{\examplebox}[1]
+      {
+      % We put this space here to make sure we're disconnected from the previous
+       % passage
+       \stepcounter{ExampleBoxCounter}
+       \noindent\fbox{\begin{minipage}[c]{\columnwidth}#1\end{minipage}}\enterTopicHeader{\ExampleSectionName}\exitTopicHeader{\ExampleSectionName}\marginpar{\fbox{\#\arabic{ExampleBoxCounter}}}
+       % We put the blank space above in order to make sure this
+       % \marginpar gets correctly placed.
+       \vskip10pt%
+       }
+    
+    \renewcommand{\contentsname}{{\normalsize Topics Covered}}
+    \renewcommand{\abstractname}{\LectureTitle\ Summary}
+    \renewcommand{\absnamepos}{flushleft}
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    \begin{document}
+    \begin{spacing}{1.2}
+    \newpage
+    \section{Neolithic and Paleolithic Art}
+    In Jordan we see the first human statues that are larger (Image 1--14).
+    They are much larger than, for example, then Venus of Willendorf 
+    (Image 1--4)
+
+    In the constructions in Turkey, the houses had no doors or conventional 
+    access paths. We believe they entered the houses and walked through the
+    roofs. What's particularly interesting about these constructions is the
+    ``shrines'' we found; houses with cow skulls and other artifacts.
+
+    Also in Turkey (Catal Hoyuk) we start seeing the first images containing
+    groups of people in activity together; in this case hunting deer. 
+    (Image 1--15)
+
+    Image 1--16 shows what we believe to be the very first \emph{landscape}.
+    Landscape here means the depiction of a landscape in it's own right.
+
+    Shifting to Western Europe, we don't find any civilizations as advanced
+    as the ones in Catal Hoyuk, but starting ca. 2000 BCE we begin finding
+    ``Henges'', large, \emph{megalithic}, stone constructions. Newgrange is
+    one of the few stone constructions that is actually preserve; and it is
+    huge. In the main gallery of the Newgrange burial chamber (Image 1--17)
+    the ceiling is in a spiral ``shape'', and in fact spiral shapes are
+    found throughout the whole construction.
+    
+    One of the biggest neolithic finds that we still look at today is the
+    Stonehenge (Image 1--20). There have been many attempts at understanding
+    the use of it, we believe it had some sort of astronomical usage, likely 
+    in relation to the summer solstice. It is not known how the neolithic
+    Britons built the Stonehenge, how they moved the huge stones. 
+    
+    (Image 1--1A) Is this art? This is a water-worn pebble, that happens to 
+    resemble a human face. Where do we draw the line? This is one of the first
+    records we have of a human recognizing itself in something else, in this
+    case a pebble.
+
+    (Image 1--6) We find this to be one of the first shows of \emph{intent},
+    someone explicitly \emph{wanted} to make this work of art and represent
+    these Bisons. 
+
+    (Image 1--9) From the Paleolithic period, and found in the Pech-Merle 
+    cave in France. The hand markings are a \emph{negative}, we believe that
+    they spit around their hands. It is also important to notice that the work
+    of ark integrates with the natural shape of the rock, the head of the horse
+    follows the surface that was available.
+
+    (Image 1--14) The distinctive factor on this statue is it's size, much 
+    larger than other humanoid statues. The construction method is also much
+    more advanced, there is a straw core that was plastered, shaped, and
+    painted. The eyes were also added, and are detailed. This statue is also
+    ungendered (unlike the Venus of Willendorf, which is clearly a female).
+
+    (Image 1--15) The important characteristic here is that there is a
+    \emph{group} of people doing an activity together, in this case hunting.
+    They seem to be working in a coherent group around one or more creatures.
+    This is the first record we have of something of this kind. The painting is
+    in \emph{composite view}, meaning a mixture between frontal and profile views.
+    
+    (Image 1--16) This is the first depiction of a Landscape in and of itself.
+    There is no story being told, this is just the pure landscape, there is at
+    most just a contextual information on the landscape. In the backgroud there
+    is what we believe to be a volcanic eruption. The meaningfulness of this lies
+    in that it requires a certain mindset, which the neolithic man had achieved, 
+    to have the \emph{will} to represent the larger picture; the landscape.
+    \end{spacing}
+    \end{document}

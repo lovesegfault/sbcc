@@ -1,0 +1,185 @@
+\documentclass{article}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Lecture Specific Information to Fill Out
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \newcommand{\LectureTitle}{Lecture \#5 Notes}
+    %\newcommand{\LectureDate}{\today}
+    \newcommand{\LectureDate}{September\ 11,\ 2017}
+    \newcommand{\LectureClassName}{ART\ 103}
+    \newcommand{\LatexerName}{Bernardo\ Meurer}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    % Change "article" to "report" to get rid of page number on title page
+    \usepackage{amsmath,amsfonts,amsthm,amssymb}
+    \usepackage{setspace}
+    \usepackage{Tabbing}
+    \usepackage{fancyhdr}
+    \usepackage{lastpage}
+    \usepackage{extramarks}
+    \usepackage{chngpage}
+    \usepackage{soul,color}
+    \usepackage{graphicx,float,wrapfig}
+    \usepackage{afterpage}
+    \usepackage{abstract}
+    
+    % In case you need to adjust margins:
+    \topmargin=-0.45in
+    \evensidemargin=0in
+    \oddsidemargin=0in
+    \textwidth=6.5in
+    \textheight=9.0in
+    \headsep=0.25in
+    
+    % Setup the header and footer
+    \pagestyle{fancy}
+    \lhead{\LatexerName}
+    \chead{\LectureClassName: \LectureTitle}
+    \rhead{\LectureDate}
+    \lfoot{\lastxmark}
+    \cfoot{}
+    \rfoot{Page\ \thepage\ of\ \pageref{LastPage}}
+    \renewcommand\headrulewidth{0.4pt}
+    \renewcommand\footrulewidth{0.4pt}
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Some tools
+    \newcommand{\enterTopicHeader}[1]{\nobreak\extramarks{#1}{#1 continued on next page\ldots}\nobreak%
+    \nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak}
+\newcommand{\exitTopicHeader}[1]{\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak%
+   \nobreak\extramarks{#1}{}\nobreak}
+
+\newlength{\labelLength}
+\newcommand{\labelAnswer}[2]
+{\settowidth{\labelLength}{#1}
+\addtolength{\labelLength}{0.25in}
+\changetext{}{-\labelLength}{}{}{}
+\noindent\fbox{\begin{minipage}[c]{\columnwidth}#2\end{minipage}}
+\marginpar{\fbox{#1}}
+
+% We put the blank space above in order to make sure this
+% \marginpar gets correctly placed.
+\changetext{}{+\labelLength}{}{}{}}
+
+\setcounter{secnumdepth}{0}
+\newcommand{\TopicName}{}
+\newcounter{TopicCounter}
+\newenvironment{Topic}[1][Problem \arabic{TopicCounter}]
+{\stepcounter{TopicCounter}
+\renewcommand{\TopicName}{#1}
+\section{\TopicName}
+\enterTopicHeader{\TopicName}}
+{\exitTopicHeader{\TopicName}}
+
+\setcounter{secnumdepth}{0}
+\newcommand{\ExampleSectionName}{}
+\newcounter{ExampleSectionCounter}[TopicCounter]
+\newenvironment{ExampleSection}[1][Example \arabic{ExampleSectionCounter}]
+{\stepcounter{ExampleSectionCounter}
+\renewcommand{\ExampleSectionName}{#1}
+\section{\ExampleSectionName}
+\enterTopicHeader{\ExampleSectionName}}
+{\exitTopicHeader{\ExampleSectionName}}
+
+\setcounter{secnumdepth}{0}
+\newcounter{ExampleBoxCounter}[TopicCounter]
+\newcommand{\examplebox}[1]
+{
+% We put this space here to make sure we're disconnected from the previous
+% passage
+\stepcounter{ExampleBoxCounter}
+\noindent\fbox{\begin{minipage}[c]{\columnwidth}#1\end{minipage}}\enterTopicHeader{\ExampleSectionName}\exitTopicHeader{\ExampleSectionName}\marginpar{\fbox{\#\arabic{ExampleBoxCounter}}}
+% We put the blank space above in order to make sure this
+% \marginpar gets correctly placed.
+\vskip10pt%
+}
+
+\renewcommand{\contentsname}{{\normalsize Topics Covered}}
+\renewcommand{\abstractname}{\LectureTitle\ Summary}
+\renewcommand{\absnamepos}{flushleft}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{document}
+    \begin{spacing}{1.2}
+    \newpage
+    \section{Akkad}
+    Akkad was a region in the fertile crescent, where some large societies 
+    developed. A notable ruler in the are was Sargon of Akkad, who introduced 
+    the idea of worship and loyalty to the \emph{king} rather than to the 
+    city-state.
+
+    (2 -- 12) The face of Sargon of Akkad is the earliest know large scale 
+    hollow cast sculpture.
+    
+
+    (2 -- 13) Here it is interesting to notice the hierarchy of scale in play. 
+    Some have proposed that he is climbing stairs into heaven, but fundamentally
+    we do not know. Everything here is pretty much as we've seen before, except 
+    for the fact that there are no more registers, and there is no more 
+    groundline.
+    
+    (2 -- 15) The Ziggurat of Ur is the largest preserved temple in the are, 
+    it is interesting to notice here that, unlike the White Temple, this one has
+    a wide open entrance in the front.
+    
+    (2 -- 16) This statue is made of Diorite, which is extremely hard and 
+    difficult to carve. The fact that they spent the time to carve this out of
+    Diorite tells us this was an important, prestigious figure.
+
+    \section{Babylon}
+    In the second millenia BCE we have the re-emergence of the mesopotamian 
+    political structure, so onc emore we have that idea of independent city 
+    states, rather than kingdoms.
+    
+    (2 -- 18) This Stele has the code of Hammurabi, which were the laws he had 
+    created. On the top, we can see God giving Hammurabi a rod, to symbolize 
+    power. The image is in composite view, despite some minor details. Perhaps 
+    the most notable thing here is the play with angle, projection that this 
+    carving attempts.
+    
+    (2 -- 19) This Statue of Queen Napir-Asu, who was the wife of one of the 
+    most power kings, weighs 3760 pounds. It's made of bronze and copper,
+    most likely in an attempt to make it durable. The position of the arms 
+    also indicates towards this, close to the body, rather than open/extended.
+    It is reminiscent of the Samarian statues (2 -- 15)
+
+    \section{Assyria}
+    They ruled an empire from the Tiger river to the Nile. The Assyrians valued 
+    an image of themselves as merciless.
+
+    (2 -- 20) This is a Lamassu, a winged, human-headed bull. We know that they 
+    guarded the entrance of Sargon II's palace. These sculptures have a really 
+    interesting composite play, looking from the side one notices five legs. 
+    This is so that it conveys motion when viewed from the side, as well as have the static motion from the front, looking naturalistic in both views.
+    
+    (2 -- 21) This is one of the reliefs we have from this era, it depicts 
+    Ashurnasirpal II with attendants and soldiers. It is peculiar here the way 
+    they tried to convey the ornamentation they had in the fabric.
+    
+    (2 -- 22) This relief depicts two men swimming, running away from Assyrian 
+    archers.  The men are holding onto ``Mussuck'', which are inflated animal 
+    skins, used to allow one to float. The picture has a few funny features, 
+    such as the castle being in the middle of the river, and the fact that the 
+    archers have their bowstring around their necks, probably to try and show 
+    the idea of depth.
+
+    (2 -- 23) The Assyrians regarded hunting prowess as a manly feature. Here, 
+    one can see Ashurbanipal (larger, with a hat), hunting lions. We being to 
+    notice an attempt at showing muscle here, noted in the lioness laying on 
+    the bottom right corner.
+
+    \section{Neo-Babylonia / Persia}
+    The Persian empire was the largest empire the world had known. If the Greeks had not succeeded in pushing back the Persians, they would have expanded to souther Europe as well.
+
+    (2 -- 24) This is the Ishtar Gate, which has been restored and now lives in 
+    the Pergamon Museum in Berlin. 
+
+    (2 -- 27) In this carving we can see people bringing tributes to the 
+    Persian king. We can notice they are a little more rounded, and their 
+    draping is very similar to the ancient greek. 
+
+    (2 -- 27 ?) In this building we can note that the arches are more pointed, 
+    opposed to the rounder arches of the romans. Associated with is is (2-29A), 
+    which is a carving showing the defeat of the Roman emperor.
+
+\end{spacing}
+    \end{document}

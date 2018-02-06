@@ -1,0 +1,187 @@
+\documentclass{article}
+    
+    \usepackage[utf8]{inputenc}
+    \usepackage{fancyhdr}
+    \usepackage{extramarks}
+    \usepackage{amsmath}
+    \usepackage{amsthm}
+    \usepackage{amsfonts}
+    \usepackage{tikz}
+    \usepackage[plain]{algorithm}
+    \usepackage{algpseudocode}
+    
+    \usetikzlibrary{automata,positioning}
+    
+    %
+    % Basic Document Settings
+    %
+    
+    \topmargin=-0.45in
+    \evensidemargin=0in
+    \oddsidemargin=0in
+    \textwidth=6.5in
+    \textheight=9.0in
+    \headsep=0.25in
+    
+    \linespread{1.1}
+    
+    \pagestyle{fancy}
+    \lhead{\hmwkAuthorName}
+    \chead{\hmwkClass\ (\hmwkClassInstructor): \hmwkTitle}
+    \rhead{\firstxmark}
+    \lfoot{\lastxmark}
+    \cfoot{\thepage}
+    
+    \renewcommand\headrulewidth{0.4pt}
+    \renewcommand\footrulewidth{0.4pt}
+    
+    \setlength\parindent{0pt}
+    
+    %
+    % Create Problem Sections
+    %
+    
+    \newcommand{\enterProblemHeader}[1]{
+        \nobreak\extramarks{}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+        \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+    }
+    
+    \newcommand{\exitProblemHeader}[1]{
+        \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+        \stepcounter{#1}
+        \nobreak\extramarks{Problem \arabic{#1}}{}\nobreak{}
+    }
+    
+    \setcounter{secnumdepth}{0}
+    \newcounter{partCounter}
+    \newcounter{homeworkProblemCounter}
+    \setcounter{homeworkProblemCounter}{1}
+    \nobreak\extramarks{Problem \arabic{homeworkProblemCounter}}{}\nobreak{}
+    
+    %
+    % Homework Problem Environment
+    %
+    % This environment takes an optional argument. When given, it will adjust the
+    % problem counter. This is useful for when the problems given for your
+    % assignment aren't sequential. See the last 3 problems of this template for an
+    % example.
+    %
+    \newenvironment{homeworkProblem}[1][-1]{
+        \ifnum#1>0
+            \setcounter{homeworkProblemCounter}{#1}
+        \fi
+        \section{Problem \arabic{homeworkProblemCounter}}
+        \setcounter{partCounter}{1}
+        \enterProblemHeader{homeworkProblemCounter}
+    }{
+        \exitProblemHeader{homeworkProblemCounter}
+    }
+    
+    %
+    % Homework Details
+    %   - Title
+    %   - Due date
+    %   - Class
+    %   - Section/Time
+    %   - Instructor
+    %   - Author
+    %
+    
+    \newcommand{\hmwkTitle}{Homework\ \#1}
+    \newcommand{\hmwkDueDate}{August 29, 2017}
+    \newcommand{\hmwkClass}{English}
+    \newcommand{\hmwkClassTime}{}
+    \newcommand{\hmwkClassInstructor}{Professor Joanne Martin}
+    \newcommand{\hmwkAuthorName}{\textbf{Bernardo Meurer}}
+    
+    %
+    % Title Page
+    %
+    
+    \title{
+        \vspace{2in}
+        \textmd{\textbf{\hmwkClass:\ \hmwkTitle}}\\
+        \normalsize\vspace{0.1in}\small{Due\ on\ \hmwkDueDate\ at 11:59pm}\\
+        \vspace{0.1in}\large{\textit{\hmwkClassInstructor\ \hmwkClassTime}}
+        \vspace{3in}
+    }
+    
+    \author{\hmwkAuthorName}
+    \date{}
+    
+    \renewcommand{\part}[1]{\textbf{\large Part \Alph{partCounter}}\stepcounter{partCounter}\\}
+    
+    %
+    % Various Helper Commands
+    %
+    
+    % Useful for algorithms
+    \newcommand{\alg}[1]{\textsc{\bfseries \footnotesize #1}}
+    
+    % For derivatives
+    \newcommand{\deriv}[1]{\frac{\mathrm{d}}{\mathrm{d}x} (#1)}
+    
+    % For partial derivatives
+    \newcommand{\pderiv}[2]{\frac{\partial}{\partial #1} (#2)}
+    
+    % Integral dx
+    \newcommand{\dx}{\mathrm{d}x}
+    
+    % Alias for the Solution section header
+    \newcommand{\solution}{\textbf{\large Solution}}
+    
+    % Probability commands: Expectation, Variance, Covariance, Bias
+    \newcommand{\E}{\mathrm{E}}
+    \newcommand{\Var}{\mathrm{Var}}
+    \newcommand{\Cov}{\mathrm{Cov}}
+    \newcommand{\Bias}{\mathrm{Bias}}
+\begin{document}
+\maketitle
+\pagebreak
+\begin{homeworkProblem}
+	\textbf{What is an essay's thesis? Restate it in your own words.}
+
+	The thesis is the main idea of the essay. It is the core of the
+	argumentation that will take place in the essay. In other words,
+	the thesis is the \emph{kernel} of the argument.
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+    \textbf{List the arguments Herman presents as evidence to support 
+    his thesis.}
+
+    \begin{itemize}
+        \item ``In a college setting, it is all but impossible not to know a 
+        person who is older than 21 and willing to provide alcohol to younger
+        students''
+        \item ``Each year 1,400 [college students] die from drinking too much.
+        600,000 are victims of alcohol-related physical assault and 17,000 are
+        a result of drunken driving deaths, many being innocent bystanders''
+        \item ``70,000 people, overwhelmingly female, are annually sexually 
+        assaulted in alcohol-related situations''
+        \item ``For 10- to 24-year-olds, alcohol is the fourth-leading cause of
+        death, made so by factors ranging from alcohol poisoning to alcohol
+        related assault and murder''
+    \end{itemize}
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+    \textbf{Summarize the opposing argument the essay identifies. Then, 
+    summarize Herman's refutation of the argument.}
+
+    The counter-argument mentioned by the essay is that the U.S. is one of only
+    four countries in the \emph{world} forcing drinking age to 21, the idea
+    being that \emph{every other country} has a lower drinking age.
+    
+    Herman's response to this is to argue that, if it is precisely those under
+    21 that are abusing alcohol, it makes little sense to \emph{allow} them to
+    do it; and that instead the prohibition should be sterner.
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+    \textbf{Restate the essay's concluding statement in your own words.}
+    We should all worry and think carefully about the alcohol problem, because
+    it might very well take our own life or the life of someone we love.
+\end{homeworkProblem}
+
+\end{document}

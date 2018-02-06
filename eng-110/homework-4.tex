@@ -1,0 +1,157 @@
+\documentclass{article}
+    
+    \usepackage[utf8]{inputenc}
+    \usepackage{fancyhdr}
+    \usepackage{extramarks}
+    \usepackage{amsmath}
+    \usepackage{amsthm}
+    \usepackage{amsfonts}
+    \usepackage{tikz}
+    \usepackage[plain]{algorithm}
+    \usepackage{algpseudocode}
+    
+    \usetikzlibrary{automata,positioning}
+    
+    %
+    % Basic Document Settings
+    %
+    
+    \topmargin=-0.45in
+    \evensidemargin=0in
+    \oddsidemargin=0in
+    \textwidth=6.5in
+    \textheight=9.0in
+    \headsep=0.25in
+    
+    \linespread{1.1}
+    
+    \pagestyle{fancy}
+    \lhead{\hmwkAuthorName}
+    \chead{\hmwkClass\ (\hmwkClassInstructor): \hmwkTitle}
+    \rhead{\firstxmark}
+    \lfoot{\lastxmark}
+    \cfoot{\thepage}
+    
+    \renewcommand\headrulewidth{0.4pt}
+    \renewcommand\footrulewidth{0.4pt}
+    
+    \setlength\parindent{0pt}
+    
+    %
+    % Create Problem Sections
+    %
+    
+    \newcommand{\enterProblemHeader}[1]{
+        \nobreak\extramarks{}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+        \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+    }
+    
+    \newcommand{\exitProblemHeader}[1]{
+        \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+        \stepcounter{#1}
+        \nobreak\extramarks{Problem \arabic{#1}}{}\nobreak{}
+    }
+    
+    \setcounter{secnumdepth}{0}
+    \newcounter{partCounter}
+    \newcounter{homeworkProblemCounter}
+    \setcounter{homeworkProblemCounter}{1}
+    \nobreak\extramarks{Problem \arabic{homeworkProblemCounter}}{}\nobreak{}
+    
+    %
+    % Homework Problem Environment
+    %
+    % This environment takes an optional argument. When given, it will adjust the
+    % problem counter. This is useful for when the problems given for your
+    % assignment aren't sequential. See the last 3 problems of this template for an
+    % example.
+    %
+    \newenvironment{homeworkProblem}[1][-1]{
+        \ifnum#1>0
+            \setcounter{homeworkProblemCounter}{#1}
+        \fi
+        \section{Problem \arabic{homeworkProblemCounter}}
+        \setcounter{partCounter}{1}
+        \enterProblemHeader{homeworkProblemCounter}
+    }{
+        \exitProblemHeader{homeworkProblemCounter}
+    }
+    
+    %
+    % Homework Details
+    %   - Title
+    %   - Due date
+    %   - Class
+    %   - Section/Time
+    %   - Instructor
+    %   - Author
+    %
+    
+    \newcommand{\hmwkTitle}{Homework\ \#4}
+    \newcommand{\hmwkDueDate}{September 5, 2017}
+    \newcommand{\hmwkClass}{English}
+    \newcommand{\hmwkClassTime}{}
+    \newcommand{\hmwkClassInstructor}{Professor Joanne Martin}
+    \newcommand{\hmwkAuthorName}{\textbf{Bernardo Meurer}}
+    
+    %
+    % Title Page
+    %
+    
+    \title{
+        \vspace{2in}
+        \textmd{\textbf{\hmwkClass:\ \hmwkTitle}}\\
+        \normalsize\vspace{0.1in}\small{Due\ on\ \hmwkDueDate\ at 3:55pm}\\
+        \vspace{0.1in}\large{\textit{\hmwkClassInstructor\ \hmwkClassTime}}
+        \vspace{3in}
+    }
+    
+    \author{\hmwkAuthorName}
+    \date{}
+    
+    \renewcommand{\part}[1]{\textbf{\large Part \Alph{partCounter}}\stepcounter{partCounter}\\}
+    
+\begin{document}
+\maketitle
+\pagebreak
+\begin{homeworkProblem}
+    \textbf{List Stephens' criticisms of college education.}
+
+    \begin{itemize}
+        \item ``It [college] rewards conformity rather than independence, 
+        competition rather than collaboration, regurgitation rather than 
+        learning, and theory rather than application. Our creativity, 
+        innovation, and curiosity are schooled out of us.''
+        \item ``Failure is punished instead of seen as a learning opportunity.''
+        \item ``College fails to empower us with the skills necessary to 
+        become productive members of today's global entrepreneurial economy.''
+    \end{itemize}
+\end{homeworkProblem}
+\begin{homeworkProblem}
+    \textbf{According to Long, in what sense had ``the conversation [about 
+    whether college is a worthwhile investment] become more complicated'' (para. 2)? What ``three important factors'' does she consider?}
+
+    In the sense that College education \emph{may} be worth it; there are 
+    factors in play that determine whether or not it's a good choice. The three
+    main factors Long lists are:
+    \begin{enumerate}
+        \item The College a student attends
+        \item The field of study
+        \item The cost of College
+    \end{enumerate}
+\end{homeworkProblem}
+\begin{homeworkProblem}
+    \textbf{What kind of supporting evidence do the writers use? Do you think
+    they should have included any other kinds of supports --- for example, 
+    expert opinion? Why or why not?}
+
+    The writes mostly rely on \emph{Logos} on their argumentation, relying 
+    heavily on data and statistics. I do not believe they should have included 
+    other types of support (Pathos, Ethos) because a point that relies solely on
+    reason is generally stronger and will withstand heavier scrutiny. In my 
+    opinion, Logos is the most fundamental form of argumentation, and a point 
+    made solely with it is ideal.
+\end{homeworkProblem}
+
+
+\end{document}

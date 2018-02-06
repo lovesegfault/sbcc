@@ -1,0 +1,177 @@
+\documentclass{article}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Lecture Specific Information to Fill Out
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \newcommand{\LectureTitle}{Lecture \#2 Notes}
+    %\newcommand{\LectureDate}{\today}
+    \newcommand{\LectureDate}{January\ 29,\ 2017}
+    \newcommand{\LectureClassName}{PHIL\ 101H}
+    \newcommand{\LatexerName}{Bernardo\ Meurer}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    % Change "article" to "report" to get rid of page number on title page
+    \usepackage{amsmath,amsfonts,amsthm,amssymb}
+    \usepackage{setspace}
+    \usepackage{Tabbing}
+    \usepackage{fancyhdr}
+    \usepackage{lastpage}
+    \usepackage{extramarks}
+    \usepackage{chngpage}
+    \usepackage{soul,color}
+    \usepackage{graphicx,float,wrapfig}
+    \usepackage{afterpage}
+    \usepackage{abstract}
+    \usepackage{syllogism}
+
+    % In case you need to adjust margins:
+    \topmargin=-0.45in
+    \evensidemargin=0in
+    \oddsidemargin=0in
+    \textwidth=6.5in
+    \textheight=9.0in
+    \headsep=0.25in
+
+    % Setup the header and footer
+    \pagestyle{fancy}
+    \lhead{\LatexerName}
+    \chead{\LectureClassName: \LectureTitle}
+    \rhead{\LectureDate}
+    \lfoot{\lastxmark}
+    \cfoot{}
+    \rfoot{Page\ \thepage\ of\ \pageref{LastPage}}
+    \renewcommand\headrulewidth{0.4pt}
+    \renewcommand\footrulewidth{0.4pt}
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Some tools
+    \newcommand{\enterTopicHeader}[1]{\nobreak\extramarks{#1}{#1 continued on next page\ldots}\nobreak%
+    \nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak}
+\newcommand{\exitTopicHeader}[1]{\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak%
+   \nobreak\extramarks{#1}{}\nobreak}
+
+\newlength{\labelLength}
+\newcommand{\labelAnswer}[2]
+{\settowidth{\labelLength}{#1}
+\addtolength{\labelLength}{0.25in}
+\changetext{}{-\labelLength}{}{}{}
+\noindent\fbox{\begin{minipage}[c]{\columnwidth}#2\end{minipage}}
+\marginpar{\fbox{#1}}
+
+% We put the blank space above in order to make sure this
+% \marginpar gets correctly placed.
+\changetext{}{+\labelLength}{}{}{}}
+
+\setcounter{secnumdepth}{0}
+\newcommand{\TopicName}{}
+\newcounter{TopicCounter}
+\newenvironment{Topic}[1][Problem \arabic{TopicCounter}]
+{\stepcounter{TopicCounter}
+\renewcommand{\TopicName}{#1}
+\section{\TopicName}
+\enterTopicHeader{\TopicName}}
+{\exitTopicHeader{\TopicName}}
+
+\setcounter{secnumdepth}{0}
+\newcommand{\ExampleSectionName}{}
+\newcounter{ExampleSectionCounter}[TopicCounter]
+\newenvironment{ExampleSection}[1][Example \arabic{ExampleSectionCounter}]
+{\stepcounter{ExampleSectionCounter}
+\renewcommand{\ExampleSectionName}{#1}
+\section{\ExampleSectionName}
+\enterTopicHeader{\ExampleSectionName}}
+{\exitTopicHeader{\ExampleSectionName}}
+
+\setcounter{secnumdepth}{0}
+\newcounter{ExampleBoxCounter}[TopicCounter]
+\newcommand{\examplebox}[1]
+{
+% We put this space here to make sure we're disconnected from the previous
+% passage
+\stepcounter{ExampleBoxCounter}
+\noindent\fbox{\begin{minipage}[c]{\columnwidth}#1\end{minipage}}\enterTopicHeader{\ExampleSectionName}\exitTopicHeader{\ExampleSectionName}\marginpar{\fbox{\#\arabic{ExampleBoxCounter}}}
+% We put the blank space above in order to make sure this
+% \marginpar gets correctly placed.
+\vskip10pt%
+}
+
+\renewcommand{\contentsname}{{\normalsize Topics Covered}}
+\renewcommand{\abstractname}{\LectureTitle\ Summary}
+\renewcommand{\absnamepos}{flushleft}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+    \begin{spacing}{1.2}
+        \newpage
+        \section{Natural Law Theory}
+        \begin{itemize}
+            \item ``There are objectively true moral principles that are grounded in Human Nature''
+            \item There are objective facts about human nature that determine what human good consists in.
+            \item St.\@Thomas Aquinas (1225--1274)
+            \begin{itemize}
+                \item ``Good is to be done, evil is to be avoided''
+                \item The natural inclinations of human beings indicate which ends are intrinsically valuable.
+                \item These inclinations are a part of human nature. Thus morality is ultimately grounded in facts about human nature.
+                \item There are four basic intrinsic goods:
+                \begin{itemize}
+                    \item Human life
+                    \item Human procreation
+                    \item Human knowledge
+                    \item Human sociability
+                \end{itemize}
+                \item To destroy any intrinsic good is intrinsically bad (evil).
+                \item \textbf{NLT} --- An action is right if and only if (and because) in performing the action one does not directly violate any of these basic values.
+                \item For instance, \emph{killing} a human is usually wrong because it destroys humans human life.
+                \item Immoral too is the use of contraception because it inhibits human procreation.
+                \item Lying (almost always) undermines the human good of knowledge.
+                \item What is something that usually harms human sociability.
+                \begin{itemize}
+                    \item Theft. Bullying. Discrimination.
+                \end{itemize}
+                \item Doctrine of Double Effect (DDE)
+                \item \textbf{DDE} --- An action that would cause at least one evil effect and at least one good effect is morally permissible if and only if all of the following conditions are met:
+                \begin{itemize}
+                    \item Intrinsic permissibility
+                    \item Necessity
+                    \item Non-intentionality
+                    \item Proportionality
+                \end{itemize}
+            \end{itemize}
+            \item What if, no matter what action you choose to do, you will violate one of the basic values and so cause some bad in the world?
+            \begin{itemize}
+                \item E.g. When a pregnant woman's life is put in danger by her fetus?
+            \end{itemize}
+            \item According to many natural law proponents, \emph{both} alternatives (abortion \emph{and} going through with pregnancy) will bring about the destruction of human life.
+            \item Criticisms
+            \begin{itemize}
+                \item It's not always straightforward to apply
+                \begin{itemize}
+                    \item What counts as human knowledge?
+                    \item What counts as human life? (A 2-week old fetus?)
+                \end{itemize}
+                \item How do we apply the DDE correctly?
+                \begin{itemize}
+                    \item Is the death penalty proportional to murder?
+                    \item What's proportional to rape?
+                \end{itemize}
+            \end{itemize}
+        \end{itemize}
+        \section{Sexual Morality}
+        \begin{itemize}
+            \item You can be liberal about moral issues, but conservative about economic issues, and conversely.
+            \item You can even be liberal about certain moral issues, but conservative about others.
+            \item On any moral issue, there is no one liberal, moderate, or conservative position.
+            \item Vatican declaration on some questions of sexual ethics
+            \begin{itemize}
+                \item The Vatican Declaration is hugely influenced by Aquinas' claim that one of the four basic human goods is \emph{human procreation}.
+                \item It assumes that an action is wrong if it is \emph{unnatural} (That it goes against \emph{proper function}).
+                \item Approved by Pope Paul VI.\@
+                \item The Vatican claims there are two sources of moral knowledge:
+                \begin{itemize}
+                    \item Natural
+                    \item Supernatural
+                \end{itemize}
+                
+            \end{itemize}
+        \end{itemize}
+    \end{spacing}
+\end{document}

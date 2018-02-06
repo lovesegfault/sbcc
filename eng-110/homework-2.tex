@@ -1,0 +1,174 @@
+\documentclass{article}
+    
+    \usepackage[utf8]{inputenc}
+    \usepackage{fancyhdr}
+    \usepackage{extramarks}
+    \usepackage{amsmath}
+    \usepackage{amsthm}
+    \usepackage{amsfonts}
+    \usepackage{tikz}
+    \usepackage[plain]{algorithm}
+    \usepackage{algpseudocode}
+    
+    \usetikzlibrary{automata,positioning}
+    
+    %
+    % Basic Document Settings
+    %
+    
+    \topmargin=-0.45in
+    \evensidemargin=0in
+    \oddsidemargin=0in
+    \textwidth=6.5in
+    \textheight=9.0in
+    \headsep=0.25in
+    
+    \linespread{1.1}
+    
+    \pagestyle{fancy}
+    \lhead{\hmwkAuthorName}
+    \chead{\hmwkClass\ (\hmwkClassInstructor): \hmwkTitle}
+    \rhead{\firstxmark}
+    \lfoot{\lastxmark}
+    \cfoot{\thepage}
+    
+    \renewcommand\headrulewidth{0.4pt}
+    \renewcommand\footrulewidth{0.4pt}
+    
+    \setlength\parindent{0pt}
+    
+    %
+    % Create Problem Sections
+    %
+    
+    \newcommand{\enterProblemHeader}[1]{
+        \nobreak\extramarks{}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+        \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+    }
+    
+    \newcommand{\exitProblemHeader}[1]{
+        \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+        \stepcounter{#1}
+        \nobreak\extramarks{Problem \arabic{#1}}{}\nobreak{}
+    }
+    
+    \setcounter{secnumdepth}{0}
+    \newcounter{partCounter}
+    \newcounter{homeworkProblemCounter}
+    \setcounter{homeworkProblemCounter}{1}
+    \nobreak\extramarks{Problem \arabic{homeworkProblemCounter}}{}\nobreak{}
+    
+    %
+    % Homework Problem Environment
+    %
+    % This environment takes an optional argument. When given, it will adjust the
+    % problem counter. This is useful for when the problems given for your
+    % assignment aren't sequential. See the last 3 problems of this template for an
+    % example.
+    %
+    \newenvironment{homeworkProblem}[1][-1]{
+        \ifnum#1>0
+            \setcounter{homeworkProblemCounter}{#1}
+        \fi
+        \section{Problem \arabic{homeworkProblemCounter}}
+        \setcounter{partCounter}{1}
+        \enterProblemHeader{homeworkProblemCounter}
+    }{
+        \exitProblemHeader{homeworkProblemCounter}
+    }
+    
+    %
+    % Homework Details
+    %   - Title
+    %   - Due date
+    %   - Class
+    %   - Section/Time
+    %   - Instructor
+    %   - Author
+    %
+    
+    \newcommand{\hmwkTitle}{Homework\ \#2}
+    \newcommand{\hmwkDueDate}{August 29, 2017}
+    \newcommand{\hmwkClass}{English}
+    \newcommand{\hmwkClassTime}{}
+    \newcommand{\hmwkClassInstructor}{Professor Joanne Martin}
+    \newcommand{\hmwkAuthorName}{\textbf{Bernardo Meurer}}
+    
+    %
+    % Title Page
+    %
+    
+    \title{
+        \vspace{2in}
+        \textmd{\textbf{\hmwkClass:\ \hmwkTitle}}\\
+        \normalsize\vspace{0.1in}\small{Due\ on\ \hmwkDueDate\ at 11:59pm}\\
+        \vspace{0.1in}\large{\textit{\hmwkClassInstructor\ \hmwkClassTime}}
+        \vspace{3in}
+    }
+    
+    \author{\hmwkAuthorName}
+    \date{}
+    
+    \renewcommand{\part}[1]{\textbf{\large Part \Alph{partCounter}}\stepcounter{partCounter}\\}
+    
+    %
+    % Various Helper Commands
+    %
+    
+    % Useful for algorithms
+    \newcommand{\alg}[1]{\textsc{\bfseries \footnotesize #1}}
+    
+    % For derivatives
+    \newcommand{\deriv}[1]{\frac{\mathrm{d}}{\mathrm{d}x} (#1)}
+    
+    % For partial derivatives
+    \newcommand{\pderiv}[2]{\frac{\partial}{\partial #1} (#2)}
+    
+    % Integral dx
+    \newcommand{\dx}{\mathrm{d}x}
+    
+    % Alias for the Solution section header
+    \newcommand{\solution}{\textbf{\large Solution}}
+    
+    % Probability commands: Expectation, Variance, Covariance, Bias
+    \newcommand{\E}{\mathrm{E}}
+    \newcommand{\Var}{\mathrm{Var}}
+    \newcommand{\Cov}{\mathrm{Cov}}
+    \newcommand{\Bias}{\mathrm{Bias}}
+
+    \newcommand{\uline}[1]{\rule[0pt]{#1}{0.4pt}}% Fill this blank
+    
+\begin{document}
+\maketitle
+\pagebreak
+\begin{homeworkProblem}
+    \textbf{Paraphrase this essay's thesis statement by filling in the
+    following template.}
+
+    Because \underline{the pay gap between graduates and others continues to 
+    widen} a four year college
+    degree is now more important than ever.
+
+\end{homeworkProblem}
+\begin{homeworkProblem}
+    \textbf{To support his position, Leonhardt relies largely on statistics.
+    Where does he include other kinds of supporting evidence?}
+    
+    In paragraphs 8 and 20, where Leonhardt uses the ``duty towards one's country''
+    as one of the reasons to go to College. He points out that going to college
+    helps the country's economy, and is therefore a good for the whole, not
+    just the individual
+\end{homeworkProblem}
+\begin{homeworkProblem}
+    \textbf{Look at the graph that follows paragraph 1, and read its caption.
+    What does this image add to the essay? Would Leonhardt's argument have 
+    been as convincing without the graph? Why or why not?}
+
+    The graph adds an intuitive, visual aspect to the argument. It helps
+    to convince the reader by presenting the data in a more understandable,
+    impactful form. Without the graph, Leonhardt's argument certainly wouldn't
+    have been as convincing, because it would be missing this visual layer.
+\end{homeworkProblem}
+
+
+\end{document}

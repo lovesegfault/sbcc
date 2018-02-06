@@ -1,0 +1,141 @@
+\documentclass{article}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Lecture Specific Information to Fill Out
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \newcommand{\LectureTitle}{Lecture \#8 Notes}
+    %\newcommand{\LectureDate}{\today}
+    \newcommand{\LectureDate}{September\ 20,\ 2017}
+    \newcommand{\LectureClassName}{ART\ 103}
+    \newcommand{\LatexerName}{Bernardo\ Meurer}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    % Change "article" to "report" to get rid of page number on title page
+    \usepackage{amsmath,amsfonts,amsthm,amssymb}
+    \usepackage{setspace}
+    \usepackage{Tabbing}
+    \usepackage{fancyhdr}
+    \usepackage{lastpage}
+    \usepackage{extramarks}
+    \usepackage{chngpage}
+    \usepackage{soul,color}
+    \usepackage{graphicx,float,wrapfig}
+    \usepackage{afterpage}
+    \usepackage{abstract}
+    
+    % In case you need to adjust margins:
+    \topmargin=-0.45in
+    \evensidemargin=0in
+    \oddsidemargin=0in
+    \textwidth=6.5in
+    \textheight=9.0in
+    \headsep=0.25in
+    
+    % Setup the header and footer
+    \pagestyle{fancy}
+    \lhead{\LatexerName}
+    \chead{\LectureClassName: \LectureTitle}
+    \rhead{\LectureDate}
+    \lfoot{\lastxmark}
+    \cfoot{}
+    \rfoot{Page\ \thepage\ of\ \pageref{LastPage}}
+    \renewcommand\headrulewidth{0.4pt}
+    \renewcommand\footrulewidth{0.4pt}
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Some tools
+    \newcommand{\enterTopicHeader}[1]{\nobreak\extramarks{#1}{#1 continued on next page\ldots}\nobreak%
+    \nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak}
+\newcommand{\exitTopicHeader}[1]{\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak%
+   \nobreak\extramarks{#1}{}\nobreak}
+
+\newlength{\labelLength}
+\newcommand{\labelAnswer}[2]
+{\settowidth{\labelLength}{#1}
+\addtolength{\labelLength}{0.25in}
+\changetext{}{-\labelLength}{}{}{}
+\noindent\fbox{\begin{minipage}[c]{\columnwidth}#2\end{minipage}}
+\marginpar{\fbox{#1}}
+
+% We put the blank space above in order to make sure this
+% \marginpar gets correctly placed.
+\changetext{}{+\labelLength}{}{}{}}
+
+\setcounter{secnumdepth}{0}
+\newcommand{\TopicName}{}
+\newcounter{TopicCounter}
+\newenvironment{Topic}[1][Problem \arabic{TopicCounter}]
+{\stepcounter{TopicCounter}
+\renewcommand{\TopicName}{#1}
+\section{\TopicName}
+\enterTopicHeader{\TopicName}}
+{\exitTopicHeader{\TopicName}}
+
+\setcounter{secnumdepth}{0}
+\newcommand{\ExampleSectionName}{}
+\newcounter{ExampleSectionCounter}[TopicCounter]
+\newenvironment{ExampleSection}[1][Example \arabic{ExampleSectionCounter}]
+{\stepcounter{ExampleSectionCounter}
+\renewcommand{\ExampleSectionName}{#1}
+\section{\ExampleSectionName}
+\enterTopicHeader{\ExampleSectionName}}
+{\exitTopicHeader{\ExampleSectionName}}
+
+\setcounter{secnumdepth}{0}
+\newcounter{ExampleBoxCounter}[TopicCounter]
+\newcommand{\examplebox}[1]
+{
+% We put this space here to make sure we're disconnected from the previous
+% passage
+\stepcounter{ExampleBoxCounter}
+\noindent\fbox{\begin{minipage}[c]{\columnwidth}#1\end{minipage}}\enterTopicHeader{\ExampleSectionName}\exitTopicHeader{\ExampleSectionName}\marginpar{\fbox{\#\arabic{ExampleBoxCounter}}}
+% We put the blank space above in order to make sure this
+% \marginpar gets correctly placed.
+\vskip10pt%
+}
+
+\renewcommand{\contentsname}{{\normalsize Topics Covered}}
+\renewcommand{\abstractname}{\LectureTitle\ Summary}
+\renewcommand{\absnamepos}{flushleft}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{document}
+    \begin{spacing}{1.2}
+    \newpage
+    \subsection{Ramses II}
+    \begin{flushright}
+        ca. 1257 BCE
+    \end{flushright}
+
+    (3 -- 23) This is the facade of the Temple of Ramses II. The figures 
+    displayed here are all Ramses himself. This building was also cut into the rock, and extended a couple hundred feet into the rock.
+
+    (3 -- 2?) Here one can see a series of \emph{Alantids}, which are (male) figures that are used as columns.
+
+    (3 -- 24) This is another temple complex that is interesting to look at. One of the reasons that make it peculiar is it's size, it's utterly huge. Something to note here are the \emph{pylon} temples. These temples had \emph{hypostyle} rooms, which have two sizes of columns. The carving on these columns are incised, and not made in low relief as usual.
+
+    (3 -- 28) Here we see a Fowling scene from the tomb of Nebamun from Thebes. This particular piece is Fresco on dry plaster. It's important to remember there are two types of Fresco, true Fresco which is done on wet/damp plaster, and dry Fresco. The advantage of true Fresco is that the pigment holds more strongly to the plaster, making it last longer.
+
+    \subsection{Amarna Period}
+    \begin{flushright}
+        Akenaton 
+    \end{flushright}
+    (3 -- 30) Here we see a statue of Akenaton, and it's peculiar to see how different his depiction is. His face is elongated, and his lips are full. His shape is curvilinear, and he has distict hips. 
+
+    (3 -- 31) This is Nefertiti, who was married to Akenaton, she was the Queen. Once again here we see a break with the old Canon, and a really graceful representation.
+
+    (3 -- 32) Here we can see a representation of Nefertiti's mother, and yet again we see depiction of age breaking with the old Canon and in fashion of the Amarna period.
+
+    \subsection{The Tomb of Tutankhamun}
+    \begin{flushright}
+        1333-1323 --- Post-Amarna Period
+    \end{flushright}
+
+    (3 -- 35) This is the death mask of Tutankhamun from the innermost coffin in hist tomb at Thebes. 
+    
+    A canopic shrine holds the canopic jars. Each jar holds one organ of the body of the deceased so that they are available for him in the afterlife.
+
+    \subsection{First Millenium BCE}
+    In this period the Nubians (modern day Sudan) conquered the Faraohs and stablished themselves as the 25th dynasty.
+
+\end{spacing}
+    \end{document}

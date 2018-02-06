@@ -1,0 +1,162 @@
+\documentclass{article}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Lecture Specific Information to Fill Out
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \newcommand{\LectureTitle}{Lecture \#5 Notes}
+    %\newcommand{\LectureDate}{\today}
+    \newcommand{\LectureDate}{September\ 11,\ 2017}
+    \newcommand{\LectureClassName}{PHIL\ 201}
+    \newcommand{\LatexerName}{Bernardo\ Meurer}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    % Change "article" to "report" to get rid of page number on title page
+    
+    \usepackage[utf8]{inputenc}
+    \usepackage{amsmath,amsfonts,amsthm,amssymb}
+    \usepackage{setspace}
+    \usepackage{Tabbing}
+    \usepackage{fancyhdr}
+    \usepackage{lastpage}
+    \usepackage{extramarks}
+    \usepackage{chngpage}
+    \usepackage{soul,color}
+    \usepackage{graphicx,float,wrapfig}
+    \usepackage{afterpage}
+    \usepackage{abstract}
+    
+    % In case you need to adjust margins:
+    \topmargin=-0.45in
+    \evensidemargin=0in
+    \oddsidemargin=0in
+    \textwidth=6.5in
+    \textheight=9.0in
+    \headsep=0.25in
+    
+    % Setup the header and footer
+    \pagestyle{fancy}
+    \lhead{\LatexerName}
+    \chead{\LectureClassName: \LectureTitle}
+    \rhead{\LectureDate}
+    \lfoot{\lastxmark}
+    \cfoot{}
+    \rfoot{Page\ \thepage\ of\ \pageref{LastPage}}
+    \renewcommand\headrulewidth{0.4pt}
+    \renewcommand\footrulewidth{0.4pt}
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Some tools
+    \newcommand{\enterTopicHeader}[1]{\nobreak\extramarks{#1}{#1 continued on next page\ldots}\nobreak%
+                                        \nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak}
+    \newcommand{\exitTopicHeader}[1]{\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak%
+                                       \nobreak\extramarks{#1}{}\nobreak}
+    
+    \newlength{\labelLength}
+    \newcommand{\labelAnswer}[2]
+      {\settowidth{\labelLength}{#1}
+       \addtolength{\labelLength}{0.25in}
+       \changetext{}{-\labelLength}{}{}{}
+       \noindent\fbox{\begin{minipage}[c]{\columnwidth}#2\end{minipage}}
+       \marginpar{\fbox{#1}}
+    
+       % We put the blank space above in order to make sure this
+       % \marginpar gets correctly placed.
+       \changetext{}{+\labelLength}{}{}{}}
+    
+    \setcounter{secnumdepth}{0}
+    \newcommand{\TopicName}{}
+    \newcounter{TopicCounter}
+    \newenvironment{Topic}[1][Problem \arabic{TopicCounter}]
+      {\stepcounter{TopicCounter}
+       \renewcommand{\TopicName}{#1}
+       \section{\TopicName}
+       \enterTopicHeader{\TopicName}}
+      {\exitTopicHeader{\TopicName}}
+    
+    \setcounter{secnumdepth}{0}
+    \newcommand{\ExampleSectionName}{}
+    \newcounter{ExampleSectionCounter}[TopicCounter]
+    \newenvironment{ExampleSection}[1][Example \arabic{ExampleSectionCounter}]
+      {\stepcounter{ExampleSectionCounter}
+       \renewcommand{\ExampleSectionName}{#1}
+       \section{\ExampleSectionName}
+       \enterTopicHeader{\ExampleSectionName}}
+      {\exitTopicHeader{\ExampleSectionName}}
+    
+    \setcounter{secnumdepth}{0}
+    \newcounter{ExampleBoxCounter}[TopicCounter]
+    \newcommand{\examplebox}[1]
+      {
+      % We put this space here to make sure we're disconnected from the previous
+       % passage
+       \stepcounter{ExampleBoxCounter}
+       \noindent\fbox{\begin{minipage}[c]{\columnwidth}#1\end{minipage}}\enterTopicHeader{\ExampleSectionName}\exitTopicHeader{\ExampleSectionName}\marginpar{\fbox{\#\arabic{ExampleBoxCounter}}}
+       % We put the blank space above in order to make sure this
+       % \marginpar gets correctly placed.
+       \vskip10pt%
+       }
+    
+    \renewcommand{\contentsname}{{\normalsize Topics Covered}}
+    \renewcommand{\abstractname}{\LectureTitle\ Summary}
+    \renewcommand{\absnamepos}{flushleft}
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    \begin{document}
+    \begin{spacing}{1.2}
+    \newpage
+    \section{Meditation III}
+    \textbf{What is required for him to be \underbar{certain} of anything?}
+
+    Well, in the case of the \underbar{Cogito}, ``I saw very clearly that to 
+    think one must exist.''
+
+    ``What is required for knowledge is my simply having a clear and distinct 
+    perception of what I am asserting.''
+    
+    Descartes provisionally then lays down the following as a general rule:
+    \begin{itemize}
+        \item ``Everything I very clearly and distinctly perceive is true.'', 
+        in other words, ``Whatever the natural light shows me is true.''
+        
+        But yet, don't we clearly and distinctively perceive that \(2+2=4\)?
+        Yet we cast doubt onto the validity of that statement in previous 
+        meditations. Therefore, to assure myself that this rule may start 
+        -- that it is reliable across-the-board -- I must be sure that God 
+        exists (otherwise there could be an evil genius), and that he is not a 
+        deceiver.
+
+        Descartes proceeds to distinguish between judgments (can either be true or false) and ideas (cannot be true or false). Fundamentally, there are 
+        3 types of ideas:
+        \begin{itemize}
+            \item Innate --- That I've always had
+            \begin{itemize}
+                \item Equality
+                \item Existence
+            \end{itemize}
+            \item Adventitious --- That come to me unexpectedly
+            \begin{itemize}
+                \item Ideas that come unexpectly from external sources.
+            \end{itemize}
+            \item Invented --- Come from me
+            \begin{itemize}
+                \item Squaligator --- A fusion of a squirrel and an alligator
+            \end{itemize}
+        \end{itemize}
+        He concludes that, is he is able to prove that God an innate idea, then 
+        god must exist. 
+
+        Take the idea of God. Eternal, infinite, immutable, omniscient, 
+        omnipotent, etc. Isn't the idea of God objectively\footnotemark[1] more 
+        real than any other idea I could possibly have. Even more than the idea 
+        of myself. It represents the greatest amount of perfection. ``Is it not 
+        evident by the light of nature that there must be as much reality in 
+        the efficient [productive] and total cause as there is in the effect of 
+        that same cause?'' In other words, there must be as much 
+        formal\footnotemark[2] reality in the cause as there is objective 
+        reality in the effect ...
+        
+    \end{itemize}
+    \footnotetext[1]{Objective = representative}
+    \footnotetext[2]{Formal = actual}
+    \end{spacing}
+    \end{document}

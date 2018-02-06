@@ -1,0 +1,151 @@
+\documentclass{article}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Lecture Specific Information to Fill Out
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \newcommand{\LectureTitle}{Lecture \#3 Notes}
+    %\newcommand{\LectureDate}{\today}
+    \newcommand{\LectureDate}{January\ 31,\ 2017}
+    \newcommand{\LectureClassName}{PHIL\ 101H}
+    \newcommand{\LatexerName}{Bernardo\ Meurer}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    % Change "article" to "report" to get rid of page number on title page
+    \usepackage{amsmath,amsfonts,amsthm,amssymb}
+    \usepackage{setspace}
+    \usepackage{Tabbing}
+    \usepackage{fancyhdr}
+    \usepackage{lastpage}
+    \usepackage{extramarks}
+    \usepackage{chngpage}
+    \usepackage{soul,color}
+    \usepackage{graphicx,float,wrapfig}
+    \usepackage{afterpage}
+    \usepackage{abstract}
+    \usepackage[margin=1in]{geometry}
+    \usepackage{syllogism}
+
+
+    % Setup the header and footer
+    \pagestyle{fancy}
+    \lhead{\LatexerName}
+    \chead{\LectureClassName: \LectureTitle}
+    \rhead{\LectureDate}
+    \lfoot{\lastxmark}
+    \cfoot{}
+    \rfoot{Page\ \thepage\ of\ \pageref{LastPage}}
+    \renewcommand\headrulewidth{0.4pt}
+    \renewcommand\footrulewidth{0.4pt}
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Some tools
+    \newcommand{\enterTopicHeader}[1]{\nobreak\extramarks{#1}{#1 continued on next page\ldots}\nobreak%
+    \nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak}
+\newcommand{\exitTopicHeader}[1]{\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak%
+   \nobreak\extramarks{#1}{}\nobreak}
+
+\newlength{\labelLength}
+\newcommand{\labelAnswer}[2]
+{\settowidth{\labelLength}{#1}
+\addtolength{\labelLength}{0.25in}
+\changetext{}{-\labelLength}{}{}{}
+\noindent\fbox{\begin{minipage}[c]{\columnwidth}#2\end{minipage}}
+\marginpar{\fbox{#1}}
+
+% We put the blank space above in order to make sure this
+% \marginpar gets correctly placed.
+\changetext{}{+\labelLength}{}{}{}}
+
+\setcounter{secnumdepth}{0}
+\newcommand{\TopicName}{}
+\newcounter{TopicCounter}
+\newenvironment{Topic}[1][Problem \arabic{TopicCounter}]
+{\stepcounter{TopicCounter}
+\renewcommand{\TopicName}{#1}
+\section{\TopicName}
+\enterTopicHeader{\TopicName}}
+{\exitTopicHeader{\TopicName}}
+
+\setcounter{secnumdepth}{0}
+\newcommand{\ExampleSectionName}{}
+\newcounter{ExampleSectionCounter}[TopicCounter]
+\newenvironment{ExampleSection}[1][Example \arabic{ExampleSectionCounter}]
+{\stepcounter{ExampleSectionCounter}
+\renewcommand{\ExampleSectionName}{#1}
+\section{\ExampleSectionName}
+\enterTopicHeader{\ExampleSectionName}}
+{\exitTopicHeader{\ExampleSectionName}}
+
+\setcounter{secnumdepth}{0}
+\newcounter{ExampleBoxCounter}[TopicCounter]
+\newcommand{\examplebox}[1]
+{
+% We put this space here to make sure we're disconnected from the previous
+% passage
+\stepcounter{ExampleBoxCounter}
+\noindent\fbox{\begin{minipage}[c]{\columnwidth}#1\end{minipage}}\enterTopicHeader{\ExampleSectionName}\exitTopicHeader{\ExampleSectionName}\marginpar{\fbox{\#\arabic{ExampleBoxCounter}}}
+% We put the blank space above in order to make sure this
+% \marginpar gets correctly placed.
+\vskip10pt%
+}
+
+\renewcommand{\contentsname}{{\normalsize Topics Covered}}
+\renewcommand{\abstractname}{\LectureTitle\ Summary}
+\renewcommand{\absnamepos}{flushleft}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{spacing}{1.2}
+    \newpage
+    \section{Sexual Morality}
+    \begin{itemize}
+        \item How the vatican argues against non-marital sex
+              \begin{itemize}
+                  \item Assuming Natural Law we have that Sex is permissible only in the context where commitment is guaranteed (because of human sociability). And then we have
+                  \item \syllog{Non-marital sex cannot ``guarantee'' the sincerity and fidelity of the relationship.}{Marriage can guarantee these things}{Sex outside of marriage is not permissible (that is, morally wrong)}
+              \end{itemize}
+        \item The Vatican's main argument against homosexuality
+              \begin{itemize}
+                  \item Assuming Natural Law Theory we have
+                  \item \syllog{Sexual activity that violates proper function of the sex organs is morally wrong}{Homosexual activity violates the proper function of the sex organs}{Homosexual activity is wrong}
+                  \item Note that this isn't an argument against \emph{homosexuals}, but rather an argument against homosexual \emph{activity}. It is perfectly fine to be a celibate homosexual (c.f. Michelangelo).
+              \end{itemize}
+        \item The Vatican also argues against the morality of masturbation, in much the same way it argues against homosexual activity.
+        \item Notice the reliance on the idea that the sexual organs have a \emph{proper function}, and therefore, sexual activity does as well.
+        \begin{itemize}
+            \item But do they? If so, does the Vatican correctly identify that function?
+        \end{itemize}
+        \item Harm-based arguments against homosexuality
+        \begin{itemize}
+            \item Corvino classifies arguments to those that appeal to it being \emph{harmful} and those that appeal to its being \emph{unnatural}.
+            \item Are the allegations of harm accurate?
+            \item Are the alleged harms caused by homosexuality itself, or some extrinsic factor?
+            \item What follows?
+            \item Are the risks in a given case worth it?
+        \end{itemize}
+        \item Arguments that homosexuality is unnatural
+        \begin{enumerate}
+            \item Unnatural = unusual or abnormal
+            \begin{itemize}
+                \item Bad form: Being unusual doesn't imply it being wrong!
+            \end{itemize}
+            \item Unnatural = not practiced by other animals
+            \begin{itemize}
+                \item Bad content: Many other animals display homosexual behavior
+                \item Bad form: Other animals not doing something doesn't imply it being wrong. (e.g. Playing piano, doing mathematics)
+            \end{itemize}
+            \item Unnatural = is not in accordance with innate desires
+            \begin{itemize}
+                \item Bad form: Just because something is in accordance to your innate desires that doesn't mean it's right (e.g. Psychopaths)
+            \end{itemize}
+            \item Unnatural = violates an organ's principal purpose
+            \begin{itemize}
+                \item Bad content: Must organs have purpose? Do organs have purpose? What purpose is it even and why?
+            \end{itemize}
+            \item Unnatural = disgusting or offensive
+            \begin{itemize}
+                \item Something being offensive/disgusting has nothing to do its morality.
+            \end{itemize}
+        \end{enumerate}
+    \end{itemize}
+\end{spacing}
+\end{document}

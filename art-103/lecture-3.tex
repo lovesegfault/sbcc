@@ -1,0 +1,158 @@
+\documentclass{article}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Lecture Specific Information to Fill Out
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \newcommand{\LectureTitle}{Lecture \#3 Notes}
+    %\newcommand{\LectureDate}{\today}
+    \newcommand{\LectureDate}{August\ 30,\ 2017}
+    \newcommand{\LectureClassName}{ART\ 103}
+    \newcommand{\LatexerName}{Bernardo\ Meurer}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    % Change "article" to "report" to get rid of page number on title page
+    \usepackage{amsmath,amsfonts,amsthm,amssymb}
+    \usepackage{setspace}
+    \usepackage{Tabbing}
+    \usepackage{fancyhdr}
+    \usepackage{lastpage}
+    \usepackage{extramarks}
+    \usepackage{chngpage}
+    \usepackage{soul,color}
+    \usepackage{graphicx,float,wrapfig}
+    \usepackage{afterpage}
+    \usepackage{abstract}
+    
+    % In case you need to adjust margins:
+    \topmargin=-0.45in
+    \evensidemargin=0in
+    \oddsidemargin=0in
+    \textwidth=6.5in
+    \textheight=9.0in
+    \headsep=0.25in
+    
+    % Setup the header and footer
+    \pagestyle{fancy}
+    \lhead{\LatexerName}
+    \chead{\LectureClassName: \LectureTitle}
+    \rhead{\LectureDate}
+    \lfoot{\lastxmark}
+    \cfoot{}
+    \rfoot{Page\ \thepage\ of\ \pageref{LastPage}}
+    \renewcommand\headrulewidth{0.4pt}
+    \renewcommand\footrulewidth{0.4pt}
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Some tools
+    \newcommand{\enterTopicHeader}[1]{\nobreak\extramarks{#1}{#1 continued on next page\ldots}\nobreak%
+                                        \nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak}
+    \newcommand{\exitTopicHeader}[1]{\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak%
+                                       \nobreak\extramarks{#1}{}\nobreak}
+    
+    \newlength{\labelLength}
+    \newcommand{\labelAnswer}[2]
+      {\settowidth{\labelLength}{#1}
+       \addtolength{\labelLength}{0.25in}
+       \changetext{}{-\labelLength}{}{}{}
+       \noindent\fbox{\begin{minipage}[c]{\columnwidth}#2\end{minipage}}
+       \marginpar{\fbox{#1}}
+    
+       % We put the blank space above in order to make sure this
+       % \marginpar gets correctly placed.
+       \changetext{}{+\labelLength}{}{}{}}
+    
+    \setcounter{secnumdepth}{0}
+    \newcommand{\TopicName}{}
+    \newcounter{TopicCounter}
+    \newenvironment{Topic}[1][Problem \arabic{TopicCounter}]
+      {\stepcounter{TopicCounter}
+       \renewcommand{\TopicName}{#1}
+       \section{\TopicName}
+       \enterTopicHeader{\TopicName}}
+      {\exitTopicHeader{\TopicName}}
+    
+    \setcounter{secnumdepth}{0}
+    \newcommand{\ExampleSectionName}{}
+    \newcounter{ExampleSectionCounter}[TopicCounter]
+    \newenvironment{ExampleSection}[1][Example \arabic{ExampleSectionCounter}]
+      {\stepcounter{ExampleSectionCounter}
+       \renewcommand{\ExampleSectionName}{#1}
+       \section{\ExampleSectionName}
+       \enterTopicHeader{\ExampleSectionName}}
+      {\exitTopicHeader{\ExampleSectionName}}
+    
+    \setcounter{secnumdepth}{0}
+    \newcounter{ExampleBoxCounter}[TopicCounter]
+    \newcommand{\examplebox}[1]
+      {
+      % We put this space here to make sure we're disconnected from the previous
+       % passage
+       \stepcounter{ExampleBoxCounter}
+       \noindent\fbox{\begin{minipage}[c]{\columnwidth}#1\end{minipage}}\enterTopicHeader{\ExampleSectionName}\exitTopicHeader{\ExampleSectionName}\marginpar{\fbox{\#\arabic{ExampleBoxCounter}}}
+       % We put the blank space above in order to make sure this
+       % \marginpar gets correctly placed.
+       \vskip10pt%
+       }
+    
+    \renewcommand{\contentsname}{{\normalsize Topics Covered}}
+    \renewcommand{\abstractname}{\LectureTitle\ Summary}
+    \renewcommand{\absnamepos}{flushleft}
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    \begin{document}
+    \begin{spacing}{1.2}
+    \newpage
+    \section{Ancient Mesopotamia and Persia}
+    Some of the first records we have of the are are pictographs. At first, 
+    simple drawings of what wanted to be depicted, and later on following some
+    rules. Their pictographs were later standardized by using 5 marks with a
+    stylus.
+
+    The White Temple (2--2) is a large temple in the area. It is a large,
+    elevated construction, probably to make them closer to whatever they
+    believed to be up in the sky. Curiously, the four corners of the White 
+    Temple are aligned with the 4 cardinal directions. We believe the temple
+    to be dedicated to Anu, the sky god. The tallest \emph{ziggurat} of all
+    was known to the hebrews as The Tower of Babylon.
+    
+    (2--4) We believe this head to be a representation of the Goddess Inanna.
+
+    (2--1) We believe this vase to be used in presenting offerings to the Gods.
+    It was found in the same temple as (2--4), and depicts images of rituals 
+    around it. We believe the rituals were to thank Innana for the abundance
+    she provides. We refer to the horizontal ``lines'' as \emph{registers},
+    they divide different sections of information in the work.
+    
+    (2--6) The Samaritans were one of the first to place figures like these in
+    their shrines. The large eyes are idiosyncratic of their statues, and 
+    symbolize their wakefulness, watchfulness, for the Gods. Some of these 
+    bear inscriptions with the name of the donor, and sometimes even specific
+    prayers for the Gods.
+    
+    (2--6) We call this the Stele of the Vultures. It celebrates the victory of 
+    Eannanatum from Girsu (modern Telloh) over the neighboring cities. The
+    number of spears, even if completely incompatible with the number of heads,
+    is an attempt at representing the size of the army. Ont he right of the
+    picture on can see Eannanatum commanding his army, and underneath the army
+    the trampled bodies of their enemies.
+
+    (2--7) This is the Standard of Ur. There is some debate still on whether
+    this is actually a war banner, some believe it to be the casing for a
+    music box.On the war side, in the top register we can see what is believe
+    to be some kind of ruler, the larger image in the center. On the peace
+    side, we can see a feast, someone playing the lyre, people carrying
+    provisions, and symbols of plentifulness.
+
+    (2--9, 2--10) The registered display of this work (2--10) is familiar, and
+    reminds us of the previous works. This is one of the earliest depictions
+    of \emph{composite} figures, mythical creatures that mix humans and animals.
+    In the top register we see a \emph{Heraldic device} (a human form with two
+    animals flanking it), this type of depiction will transcend civilizations,
+    and this is one of the first ones we are aware of.
+    
+    (2--11) Cylinder seals are carved stone cylinders that, when rolled over a
+    soft surface, would imprint it's drawings on it. These signified high
+    positions, you had to be a ruler or someone of important to own a seal
+
+    \end{spacing}
+    \end{document}

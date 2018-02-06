@@ -1,0 +1,132 @@
+\documentclass{article}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Lecture Specific Information to Fill Out
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \newcommand{\LectureTitle}{Lecture \#20 Notes}
+    %\newcommand{\LectureDate}{\today}
+    \newcommand{\LectureDate}{November\ 8,\ 2017}
+    \newcommand{\LectureClassName}{ART\ 103}
+    \newcommand{\LatexerName}{Bernardo\ Meurer}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    % Change "article" to "report" to get rid of page number on title page
+    \usepackage{amsmath,amsfonts,amsthm,amssymb}
+    \usepackage{setspace}
+    \usepackage{Tabbing}
+    \usepackage{fancyhdr}
+    \usepackage{lastpage}
+    \usepackage{extramarks}
+    \usepackage{chngpage}
+    \usepackage{soul,color}
+    \usepackage{graphicx,float,wrapfig}
+    \usepackage{afterpage}
+    \usepackage{abstract}
+
+    % In case you need to adjust margins:
+    \topmargin=-0.45in
+    \evensidemargin=0in
+    \oddsidemargin=0in
+    \textwidth=6.5in
+    \textheight=9.0in
+    \headsep=0.25in
+
+    % Setup the header and footer
+    \pagestyle{fancy}
+    \lhead{\LatexerName}
+    \chead{\LectureClassName: \LectureTitle}
+    \rhead{\LectureDate}
+    \lfoot{\lastxmark}
+    \cfoot{}
+    \rfoot{Page\ \thepage\ of\ \pageref{LastPage}}
+    \renewcommand\headrulewidth{0.4pt}
+    \renewcommand\footrulewidth{0.4pt}
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Some tools
+    \newcommand{\enterTopicHeader}[1]{\nobreak\extramarks{#1}{#1 continued on next page\ldots}\nobreak%
+    \nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak}
+\newcommand{\exitTopicHeader}[1]{\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak%
+   \nobreak\extramarks{#1}{}\nobreak}
+
+\newlength{\labelLength}
+\newcommand{\labelAnswer}[2]
+{\settowidth{\labelLength}{#1}
+\addtolength{\labelLength}{0.25in}
+\changetext{}{-\labelLength}{}{}{}
+\noindent\fbox{\begin{minipage}[c]{\columnwidth}#2\end{minipage}}
+\marginpar{\fbox{#1}}
+
+% We put the blank space above in order to make sure this
+% \marginpar gets correctly placed.
+\changetext{}{+\labelLength}{}{}{}}
+
+\setcounter{secnumdepth}{0}
+\newcommand{\TopicName}{}
+\newcounter{TopicCounter}
+\newenvironment{Topic}[1][Problem \arabic{TopicCounter}]
+{\stepcounter{TopicCounter}
+\renewcommand{\TopicName}{#1}
+\section{\TopicName}
+\enterTopicHeader{\TopicName}}
+{\exitTopicHeader{\TopicName}}
+
+\setcounter{secnumdepth}{0}
+\newcommand{\ExampleSectionName}{}
+\newcounter{ExampleSectionCounter}[TopicCounter]
+\newenvironment{ExampleSection}[1][Example \arabic{ExampleSectionCounter}]
+{\stepcounter{ExampleSectionCounter}
+\renewcommand{\ExampleSectionName}{#1}
+\section{\ExampleSectionName}
+\enterTopicHeader{\ExampleSectionName}}
+{\exitTopicHeader{\ExampleSectionName}}
+
+\setcounter{secnumdepth}{0}
+\newcounter{ExampleBoxCounter}[TopicCounter]
+\newcommand{\examplebox}[1]
+{
+% We put this space here to make sure we're disconnected from the previous
+% passage
+\stepcounter{ExampleBoxCounter}
+\noindent\fbox{\begin{minipage}[c]{\columnwidth}#1\end{minipage}}\enterTopicHeader{\ExampleSectionName}\exitTopicHeader{\ExampleSectionName}\marginpar{\fbox{\#\arabic{ExampleBoxCounter}}}
+% We put the blank space above in order to make sure this
+% \marginpar gets correctly placed.
+\vskip10pt%
+}
+
+\renewcommand{\contentsname}{{\normalsize Topics Covered}}
+\renewcommand{\abstractname}{\LectureTitle\ Summary}
+\renewcommand{\absnamepos}{flushleft}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+    \begin{spacing}{1.2}
+    \newpage
+        \section{Byzantium}
+        (9 -- 1) Here we have San Vitale. On the right-hand side of Christ we have a mosaic (9 -- 13).
+
+        (9 -- 2) This is a carving of the Archangel Michael, which was the saint of the Byzantine. The wings are reminiscent of greco-roman art. Also to note here is the architectural setting, and the entomation of 3-dimensionality. Also his feet don't make much sense (look at his position w.r.t. the pillars.) This is typical of Byzantine art, being disconcerned with perfection in spacial depiction. 
+
+        (9 -- 4) This is Justinian as world conqueror, which is clearly a political work.
+
+        (9 -- 5) This is the Hagia Sofia, a church made to rival all others. This combines the mysticism of eastern christianity, the ambitious scale of Rome, the vaulting tradition of the near east, and the greek theory.
+
+        (9 -- 8) Here we see something we hadn't seen before, a dome with windows. This was possible due to the use of pendentives, which take weight away from the dome.
+
+        (9 -- 11) This is San Vitale, which follows an \emph{octagon on an octagon} plan.
+
+        (9 -- 13) This mosaic is positioned to the right of Christ to show Justinian as Christ's right hand man. This mosaic is combining Church and State, which is a huge deal. The overlapping of feet shows us who's the most significant figure in each group. On the left we see a shield, indicating that they are soldiers, but on the shield we see the Chi Rho, which is a symbol for christ. The 2 dimensional aspect of the image is due to the belief that the spiritual message is more important than the realism.
+
+        (9 -- 16) Here we see Jesus in a mandorla. At his feet we see some of the apostles. Also interesting here is that we see a bearded view of Christ, which is a change from the very youthful christ we had seen before.
+
+        \subsection{Middle Byzantine Art}
+        \begin{flushright}
+            Begins with the renunciation of iconoclasm in 843 and ends with the western Crusaders' occupation of Constantinople in 1204.
+        \end{flushright}
+
+        (9 -- 21) The big takeaway on this one is that there are two domes on this church. Also here we begin to see some slight care to the exterior of the church, with the us of stones of different colors and punctuation.
+
+        (9 -- 23) Here we see Christ as the Pantokrator, which is a dome mosaic.
+
+        (9 -- 25) This is a big change in the depiction of the crucifixion. He looks far worse than we had previously seen, he looks sad and suffering, and this is the first time we see the a hint that the process of crucifixion was agonizing and painful.
+    \end{spacing}
+\end{document}

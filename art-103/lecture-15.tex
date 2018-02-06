@@ -1,0 +1,157 @@
+\documentclass{article}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Lecture Specific Information to Fill Out
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \newcommand{\LectureTitle}{Lecture \#15 Notes}
+    %\newcommand{\LectureDate}{\today}
+    \newcommand{\LectureDate}{October\ 18,\ 2017}
+    \newcommand{\LectureClassName}{ART\ 103}
+    \newcommand{\LatexerName}{Bernardo\ Meurer}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    % Change "article" to "report" to get rid of page number on title page
+    \usepackage{amsmath,amsfonts,amsthm,amssymb}
+    \usepackage{setspace}
+    \usepackage{Tabbing}
+    \usepackage{fancyhdr}
+    \usepackage{lastpage}
+    \usepackage{extramarks}
+    \usepackage{chngpage}
+    \usepackage{soul,color}
+    \usepackage{graphicx,float,wrapfig}
+    \usepackage{afterpage}
+    \usepackage{abstract}
+    
+    % In case you need to adjust margins:
+    \topmargin=-0.45in
+    \evensidemargin=0in
+    \oddsidemargin=0in
+    \textwidth=6.5in
+    \textheight=9.0in
+    \headsep=0.25in
+    
+    % Setup the header and footer
+    \pagestyle{fancy}
+    \lhead{\LatexerName}
+    \chead{\LectureClassName: \LectureTitle}
+    \rhead{\LectureDate}
+    \lfoot{\lastxmark}
+    \cfoot{}
+    \rfoot{Page\ \thepage\ of\ \pageref{LastPage}}
+    \renewcommand\headrulewidth{0.4pt}
+    \renewcommand\footrulewidth{0.4pt}
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Some tools
+    \newcommand{\enterTopicHeader}[1]{\nobreak\extramarks{#1}{#1 continued on next page\ldots}\nobreak%
+    \nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak}
+\newcommand{\exitTopicHeader}[1]{\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak%
+   \nobreak\extramarks{#1}{}\nobreak}
+
+\newlength{\labelLength}
+\newcommand{\labelAnswer}[2]
+{\settowidth{\labelLength}{#1}
+\addtolength{\labelLength}{0.25in}
+\changetext{}{-\labelLength}{}{}{}
+\noindent\fbox{\begin{minipage}[c]{\columnwidth}#2\end{minipage}}
+\marginpar{\fbox{#1}}
+
+% We put the blank space above in order to make sure this
+% \marginpar gets correctly placed.
+\changetext{}{+\labelLength}{}{}{}}
+
+\setcounter{secnumdepth}{0}
+\newcommand{\TopicName}{}
+\newcounter{TopicCounter}
+\newenvironment{Topic}[1][Problem \arabic{TopicCounter}]
+{\stepcounter{TopicCounter}
+\renewcommand{\TopicName}{#1}
+\section{\TopicName}
+\enterTopicHeader{\TopicName}}
+{\exitTopicHeader{\TopicName}}
+
+\setcounter{secnumdepth}{0}
+\newcommand{\ExampleSectionName}{}
+\newcounter{ExampleSectionCounter}[TopicCounter]
+\newenvironment{ExampleSection}[1][Example \arabic{ExampleSectionCounter}]
+{\stepcounter{ExampleSectionCounter}
+\renewcommand{\ExampleSectionName}{#1}
+\section{\ExampleSectionName}
+\enterTopicHeader{\ExampleSectionName}}
+{\exitTopicHeader{\ExampleSectionName}}
+
+\setcounter{secnumdepth}{0}
+\newcounter{ExampleBoxCounter}[TopicCounter]
+\newcommand{\examplebox}[1]
+{
+% We put this space here to make sure we're disconnected from the previous
+% passage
+\stepcounter{ExampleBoxCounter}
+\noindent\fbox{\begin{minipage}[c]{\columnwidth}#1\end{minipage}}\enterTopicHeader{\ExampleSectionName}\exitTopicHeader{\ExampleSectionName}\marginpar{\fbox{\#\arabic{ExampleBoxCounter}}}
+% We put the blank space above in order to make sure this
+% \marginpar gets correctly placed.
+\vskip10pt%
+}
+
+\renewcommand{\contentsname}{{\normalsize Topics Covered}}
+\renewcommand{\abstractname}{\LectureTitle\ Summary}
+\renewcommand{\absnamepos}{flushleft}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+    \begin{spacing}{1.2}
+    \newpage
+        \subsection{Terms}
+        \begin{itemize}
+            \item Eclectic
+            \item Peripteral \& Pseudoperipteral
+            \item Barrel vault
+            \item Groin vault 
+            \item Denarius
+            \item Basilica
+            \item Amphitheater 
+            \item Cavea
+            \item Velarium
+            \item Artium
+            \item Impluvium
+            \item Atmospheric perspective
+            \item Rusticated
+            \item Oculus
+        \end{itemize}
+        
+        \section{The Roman Empire}
+        \begin{flushright}
+            April 21 XXX BCE
+        \end{flushright}
+
+        (7 -- 3) Here we can see a Pseudoperipteral temple, because it has columns all around (like the greek), but only the frontal ones are real columns (like the etruscans), with the remaining being engaged.
+
+        (7 -- 6) These were usually made in concrete, because it allows for greater height, and also allows for you to truly shape the material to wish.
+
+        (7 -- 6a) Barrel or tunnel vault
+
+        (7 -- 6b) Two orthogonal barrel vaults are what we call a groin vault. 
+
+        (7 -- 6c) Fenestrated sequence of groin vaults. 
+
+        (7 -- 6d) Dome vault 
+
+        (7 -- 7) Romans really valued their ancestors. Here we see a man, who has recently been deceased, with busts of his ancestors. 
+
+        (7 -- 11) Here we see a relief portrait of freed slaves with the man who freed them in the middle. 
+        
+        \subsection{Pompeii and the Vesuvius}
+
+        (7 -- 15) This is what a typical Roman house looked like. 
+        
+        (7 -- 16) Here we see an atrium and  an impluvium, which was used to connect rainwater. The ceiling opening allowed for light and air to come in, as well as provided a direct pathway to the gods. 
+
+        (7 -- 17) This is a First Style (there are four) wall painting. The aim of this was to use plaster and paint to imitate marble. We call this masonry style, because of this attempt to imitate stone. They would go as far as to texture the painting to attempt to recreate the feeling of stone.
+
+        (7 -- 19) Int he Second style we have scenes happenign with some depth on the wall
+
+        (7 )
+
+
+    \end{spacing}
+\end{document}

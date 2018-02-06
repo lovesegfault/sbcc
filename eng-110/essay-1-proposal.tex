@@ -1,0 +1,227 @@
+\documentclass{article}
+    
+    \usepackage[utf8]{inputenc}
+    \usepackage{fancyhdr}
+    \usepackage{extramarks}
+    \usepackage{amsmath}
+    \usepackage{amsthm}
+    \usepackage{amsfonts}
+    \usepackage{enumitem}
+    \usepackage{tikz}
+    \usepackage[plain]{algorithm}
+    \usepackage{algpseudocode}
+    
+    \usetikzlibrary{automata,positioning}
+    
+    %
+    % Basic Document Settings
+    %
+    
+    \topmargin=-0.45in
+    \evensidemargin=0in
+    \oddsidemargin=0in
+    \textwidth=6.5in
+    \textheight=9.0in
+    \headsep=0.25in
+    
+    \linespread{1.1}
+    
+    \pagestyle{fancy}
+    \lhead{\hmwkAuthorName}
+    \chead{\hmwkClass\ (\hmwkClassInstructor): \hmwkTitle}
+    \rhead{\firstxmark}
+    \lfoot{\lastxmark}
+    \cfoot{\thepage}
+    
+    \renewcommand\headrulewidth{0.4pt}
+    \renewcommand\footrulewidth{0.4pt}
+    
+    \setlength\parindent{0pt}
+    
+    %
+    % Create Problem Sections
+    %
+    
+    \newcommand{\enterProblemHeader}[1]{
+        \nobreak\extramarks{}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+        \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+    }
+    
+    \newcommand{\exitProblemHeader}[1]{
+        \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+        \stepcounter{#1}
+        \nobreak\extramarks{Problem \arabic{#1}}{}\nobreak{}
+    }
+    
+    \setcounter{secnumdepth}{0}
+    \newcounter{partCounter}
+    \newcounter{homeworkProblemCounter}
+    \setcounter{homeworkProblemCounter}{1}
+    \nobreak\extramarks{Problem \arabic{homeworkProblemCounter}}{}\nobreak{}
+    
+    %
+    % Homework Problem Environment
+    %
+    % This environment takes an optional argument. When given, it will adjust the
+    % problem counter. This is useful for when the problems given for your
+    % assignment aren't sequential. See the last 3 problems of this template for an
+    % example.
+    %
+    \newenvironment{homeworkProblem}[1][-1]{
+        \ifnum#1>0
+            \setcounter{homeworkProblemCounter}{#1}
+        \fi
+        \section{Problem \arabic{homeworkProblemCounter}}
+        \setcounter{partCounter}{1}
+        \enterProblemHeader{homeworkProblemCounter}
+    }{
+        \exitProblemHeader{homeworkProblemCounter}
+    }
+    
+    %
+    % Homework Details
+    %   - Title
+    %   - Due date
+    %   - Class
+    %   - Section/Time
+    %   - Instructor
+    %   - Author
+    %
+    
+    \newcommand{\hmwkTitle}{Essay 1 Proposal}
+    \newcommand{\hmwkDueDate}{September 6, 2017}
+    \newcommand{\hmwkClass}{English}
+    \newcommand{\hmwkClassTime}{}
+    \newcommand{\hmwkClassInstructor}{Professor Joanne Martin}
+    \newcommand{\hmwkAuthorName}{\textbf{Bernardo Meurer}}
+    
+    %
+    % Title Page
+    %
+    
+    \title{
+        \vspace{2in}
+        \textmd{\textbf{\hmwkClass:\ \hmwkTitle}}\\
+        \normalsize\vspace{0.1in}\small{Due\ on\ \hmwkDueDate\ at 3:55pm}\\
+        \vspace{0.1in}\large{\textit{\hmwkClassInstructor\ \hmwkClassTime}}
+        \vspace{3in}
+    }
+    
+    \author{\hmwkAuthorName}
+    \date{}
+    
+    \renewcommand{\part}[1]{\textbf{\large Part \Alph{partCounter}}\stepcounter{partCounter}\\}
+    
+\begin{document}
+\maketitle
+\pagebreak
+\begin{homeworkProblem}
+    \textbf{Who is your audience? What kind of tone/language should you use in 
+    this essay?}
+
+    My audience is the academic community, and the essay should be written in 
+    formal language.
+\end{homeworkProblem}
+\begin{homeworkProblem}
+    \textbf{What does your audience need to know (introduction) before you 
+    state your thesis?}
+
+    They need to know \emph{what} the issue with College is, they need to 
+    placed into the context of the issue. 
+\end{homeworkProblem}
+\begin{homeworkProblem}
+    \textbf{What is your working thesis?}
+    
+    Although College is expensive, it is well worth it's high price.
+\end{homeworkProblem}
+\begin{homeworkProblem}
+    \textbf{What specific points will you need to argue in order to support 
+    your thesis?}
+
+    \begin{enumerate}
+        \item College is a worthy investment, it yields long-term monetary gains
+        \item College has intangible benefits that make you a better citizen 
+        and person
+        \item College protects you from unemployment
+        \item College provides you with a powerful network.
+    \end{enumerate}
+\end{homeworkProblem}
+\begin{homeworkProblem}
+    \textbf{Which articles will you use to support your argument?}
+    \begin{itemize}
+        \item ``What's the value of a college education'' by Jennifer Barrett
+        \item ``Is college worth it? Clearly, new data say'' by David Leonhart
+        \item ``Is it still worth going to college?'' by Mary C. Daly \& Leila 
+        Bengali 
+    \end{itemize}
+\end{homeworkProblem}
+\begin{homeworkProblem}
+    \textbf{Provide at least one specific example from each article that you 
+    might use in your essay. Explain how each of these examples will support 
+    your ideas.}
+
+    \begin{enumerate}
+        \item ``What's the value of a college education'' by Jennifer Barrett
+        \begin{itemize}
+            \item ``Almost all of the highest-paying majors are in engineering 
+            fields.'' --- Engineering majors require going to college, this 
+            supports point 1.\ described in Problem 4. 
+            \item ``the country will need nearly 250,000 more engineers over the next 10 years to work in high-growth sectors and industries.'' --- This falls in line with point 3.\ clearly.
+        \end{itemize}
+        \newpage
+        \item ``Is college worth it? Clearly, new data say'' by David Leonhart
+        \begin{itemize}
+            \item ``The pay of people with a four-year college degree has risen 
+            compared to that of those with a high school degree but no 
+            college.'' --- Speaks to point 1.
+            \item ``The pay gap between college graduates and everyone else reached a record high last year [2013]'' --- Also point 1.
+        \end{itemize}
+        \item ``Is it still worth going to college?'' by Mary C. Daly \& Leila 
+        Bengali
+        \begin{itemize}
+            \item ``For most Americans the path to higher future earnings 
+            involves a four-year college degree.'' --- Points 1.\ and 3.
+            \item ``The average college graduate can recover the costs of 
+            attending in less than 20 years.'' --- Good point in general, relates well to thesis statement.
+        \end{itemize}
+    \end{enumerate}
+\end{homeworkProblem}
+\begin{homeworkProblem}
+    \textbf{What specific personal examples can you provide to help argue this idea?}
+
+    Personal examples generally constitute anecdotal evidence, they are prone to cherry-picking and false-analogy fallacies, and are fundamentally weaker than real data. I don't intend on using it on my 
+    arguments.
+\end{homeworkProblem}
+\begin{homeworkProblem}
+    \begin{enumerate}[label=\alph*)]
+        \item \textbf{What are some possible opposing argument(s) to your position?}
+        \begin{enumerate}
+            \item The price of college is too high
+            \item College takes too long
+            \item College has no bearing on your success
+        \end{enumerate}
+        \item \textbf{What articles will you use to demonstrate the opposing argument(s)?}
+        \begin{enumerate}
+            \item  ``We send too many students to college'' by Marty Nemko
+            \item ``College is a waste of time'' by Dale Stephens
+            \item ``Practical experience trumps fancy degrees'' by Tony Brummel
+        \end{enumerate}
+
+        \item \textbf{How will you refute those arguments?}
+        \begin{enumerate}
+            \item College may be expensive, but the cost is well worth it, and 
+            you will get a return on your investment, even if perhaps not on 
+            the short-term.
+            \item The U.S. median life expectancy is of 80 years. The 4 years of college are a mere 5\% of that, and it has a highly positive impact on the future years.
+            \item The argument is straight out fallacious, it's cherry picked and anecdotal. Statistically college degrees \emph{do} imply a better, more successful life. 
+        \end{enumerate}
+
+        \item \textbf{Will you use any articles to refute those opposing arguments? Which ones?}
+        \begin{enumerate}
+            \item Probably not.
+        \end{enumerate}
+
+    \end{enumerate}
+\end{homeworkProblem}
+
+\end{document}  

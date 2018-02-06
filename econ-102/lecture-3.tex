@@ -1,0 +1,142 @@
+\documentclass{article}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Lecture Specific Information to Fill Out
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \newcommand{\LectureTitle}{Lecture \#3 Notes}
+    %\newcommand{\LectureDate}{\today}
+    \newcommand{\LectureDate}{August\ 29,\ 2017}
+    \newcommand{\LectureClassName}{ECON\ 102}
+    \newcommand{\LatexerName}{Bernardo\ Meurer}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    % Change "article" to "report" to get rid of page number on title page
+    
+    \usepackage[utf8]{inputenc}
+    \usepackage{amsmath,amsfonts,amsthm,amssymb}
+    \usepackage{setspace}
+    \usepackage{Tabbing}
+    \usepackage{fancyhdr}
+    \usepackage{lastpage}
+    \usepackage{extramarks}
+    \usepackage{chngpage}
+    \usepackage{todonotes}
+    \usepackage{soul,color}
+    \usepackage{graphicx,float,wrapfig}
+    \usepackage{afterpage}
+    \usepackage{abstract}
+    
+    % In case you need to adjust margins:
+    \topmargin=-0.45in
+    \evensidemargin=0in
+    \oddsidemargin=0in
+    \textwidth=6.5in
+    \textheight=9.0in
+    \headsep=0.25in
+    
+    % Setup the header and footer
+    \pagestyle{fancy}
+    \lhead{\LatexerName}
+    \chead{\LectureClassName: \LectureTitle}
+    \rhead{\LectureDate}
+    \lfoot{\lastxmark}
+    \cfoot{}
+    \rfoot{Page\ \thepage\ of\ \pageref{LastPage}}
+    \renewcommand\headrulewidth{0.4pt}
+    \renewcommand\footrulewidth{0.4pt}
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Some tools
+    \newcommand{\enterTopicHeader}[1]{\nobreak\extramarks{#1}{#1 continued on next page\ldots}\nobreak%
+                                        \nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak}
+    \newcommand{\exitTopicHeader}[1]{\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak%
+                                       \nobreak\extramarks{#1}{}\nobreak}
+    
+    \newlength{\labelLength}
+    \newcommand{\labelAnswer}[2]
+      {\settowidth{\labelLength}{#1}
+       \addtolength{\labelLength}{0.25in}
+       \changetext{}{-\labelLength}{}{}{}
+       \noindent\fbox{\begin{minipage}[c]{\columnwidth}#2\end{minipage}}
+       \marginpar{\fbox{#1}}
+    
+       % We put the blank space above in order to make sure this
+       % \marginpar gets correctly placed.
+       \changetext{}{+\labelLength}{}{}{}}
+    
+    \setcounter{secnumdepth}{0}
+    \newcommand{\TopicName}{}
+    \newcounter{TopicCounter}
+    \newenvironment{Topic}[1][Problem \arabic{TopicCounter}]
+      {\stepcounter{TopicCounter}
+       \renewcommand{\TopicName}{#1}
+       \section{\TopicName}
+       \enterTopicHeader{\TopicName}}
+      {\exitTopicHeader{\TopicName}}
+    
+    \setcounter{secnumdepth}{0}
+    \newcommand{\ExampleSectionName}{}
+    \newcounter{ExampleSectionCounter}[TopicCounter]
+    \newenvironment{ExampleSection}[1][Example \arabic{ExampleSectionCounter}]
+      {\stepcounter{ExampleSectionCounter}
+       \renewcommand{\ExampleSectionName}{#1}
+       \section{\ExampleSectionName}
+       \enterTopicHeader{\ExampleSectionName}}
+      {\exitTopicHeader{\ExampleSectionName}}
+    
+    \setcounter{secnumdepth}{0}
+    \newcounter{ExampleBoxCounter}[TopicCounter]
+    \newcommand{\examplebox}[1]
+      {
+      % We put this space here to make sure we're disconnected from the previous
+       % passage
+       \stepcounter{ExampleBoxCounter}
+       \noindent\fbox{\begin{minipage}[c]{\columnwidth}#1\end{minipage}}\enterTopicHeader{\ExampleSectionName}\exitTopicHeader{\ExampleSectionName}\marginpar{\fbox{\#\arabic{ExampleBoxCounter}}}
+       % We put the blank space above in order to make sure this
+       % \marginpar gets correctly placed.
+       \vskip10pt%
+       }
+    
+    \renewcommand{\contentsname}{{\normalsize Topics Covered}}
+    \renewcommand{\abstractname}{\LectureTitle\ Summary}
+    \renewcommand{\absnamepos}{flushleft}
+    
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    \begin{document}
+    \begin{spacing}{1.2}
+    \newpage
+    The PPF\footnote{Production Possibility Frontier}, when limited by a number
+    of hours, will form a straight line (when graphed). If we remove this
+    limitation, the PPF can become non-linear (bow-shaped). The PPF will be
+    bow-shaped when different workers have different skills, which will yield
+    different opportunity costs for making one good in terms of the other.
+    
+    \todo{Add graph}In non-linear PPF graphs, the \emph{Law of Increasing 
+    Opportunity Cost} becomes clear.
+    
+    As scientists, economists make \emph{positive statements}, which attempt to
+    describe the world as it is. On the other hand, as policy advisors
+    economists make \emph{normative statements}, which attempt to prescribe the
+    world what it should be.
+
+    Propositions about which most economists agree:
+    \begin{itemize}
+        \item A ceiling on rents reduces the quantity and quality of housing
+        available. (93\%)
+        \item Tariffs and import quotas usually reduce general economic
+        welfare. (93\%)
+        \item The United States should not restrict employers from outstanding
+        work to foreign countries. (90\%)
+        \item The United States should eliminate agriculture subsidies. (85\%)
+    \end{itemize}
+
+    \todo{Add example}With international trade a country's consumed amount of goods can lie 
+    \emph{outside} of the PPF.\@This is why trade can be beneficial for both
+    sides, it allows countries to overcome the boundaries of their PPF. The 
+    terms of trade will lie \emph{in between} the opportunity costs of both
+    trading parties
+
+
+    \end{spacing}
+    \end{document}

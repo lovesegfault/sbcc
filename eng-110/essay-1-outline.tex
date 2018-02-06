@@ -1,0 +1,218 @@
+\documentclass{article}
+    
+    \usepackage[utf8]{inputenc}
+    \usepackage{fancyhdr}
+    \usepackage{extramarks}
+    \usepackage{amsmath}
+    \usepackage{amsthm}
+    \usepackage{amsfonts}
+    \usepackage{enumitem}
+    \usepackage{tikz}
+    \usepackage[plain]{algorithm}
+    \usepackage{algpseudocode}
+    
+    \usetikzlibrary{automata,positioning}
+    
+    %
+    % Basic Document Settings
+    %
+    
+    \topmargin=-0.45in
+    \evensidemargin=0in
+    \oddsidemargin=0in
+    \textwidth=6.5in
+    \textheight=9.0in
+    \headsep=0.25in
+    
+    \linespread{1.1}
+    
+    \pagestyle{fancy}
+    \lhead{\hmwkAuthorName}
+    \chead{\hmwkClass\ (\hmwkClassInstructor): \hmwkTitle}
+    \rhead{\firstxmark}
+    \lfoot{\lastxmark}
+    \cfoot{\thepage}
+    
+    \renewcommand\headrulewidth{0.4pt}
+    \renewcommand\footrulewidth{0.4pt}
+    
+    \setlength\parindent{0pt}
+    
+    %
+    % Create Problem Sections
+    %
+    
+    \newcommand{\enterProblemHeader}[1]{
+        \nobreak\extramarks{}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+        \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+    }
+    
+    \newcommand{\exitProblemHeader}[1]{
+        \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+        \stepcounter{#1}
+        \nobreak\extramarks{Problem \arabic{#1}}{}\nobreak{}
+    }
+    
+    \setcounter{secnumdepth}{0}
+    \newcounter{partCounter}
+    \newcounter{homeworkProblemCounter}
+    \setcounter{homeworkProblemCounter}{1}
+    \nobreak\extramarks{Problem \arabic{homeworkProblemCounter}}{}\nobreak{}
+    
+    %
+    % Homework Problem Environment
+    %
+    % This environment takes an optional argument. When given, it will adjust the
+    % problem counter. This is useful for when the problems given for your
+    % assignment aren't sequential. See the last 3 problems of this template for an
+    % example.
+    %
+    \newenvironment{homeworkProblem}[1][-1]{
+        \ifnum#1>0
+            \setcounter{homeworkProblemCounter}{#1}
+        \fi
+        \section{Problem \arabic{homeworkProblemCounter}}
+        \setcounter{partCounter}{1}
+        \enterProblemHeader{homeworkProblemCounter}
+    }{
+        \exitProblemHeader{homeworkProblemCounter}
+    }
+    
+    %
+    % Homework Details
+    %   - Title
+    %   - Due date
+    %   - Class
+    %   - Section/Time
+    %   - Instructor
+    %   - Author
+    %
+    
+    \newcommand{\hmwkTitle}{Essay 1 Outline}
+    \newcommand{\hmwkDueDate}{September 10, 2017}
+    \newcommand{\hmwkClass}{English}
+    \newcommand{\hmwkClassTime}{}
+    \newcommand{\hmwkClassInstructor}{Professor Joanne Martin}
+    \newcommand{\hmwkAuthorName}{\textbf{Bernardo Meurer}}
+    
+    %
+    % Title Page
+    %
+    
+    \title{
+        \vspace{2in}
+        \textmd{\textbf{\hmwkClass:\ \hmwkTitle}}\\
+        \normalsize\vspace{0.1in}\small{Due\ on\ \hmwkDueDate\ at 11:59pm}\\
+        \vspace{0.1in}\large{\textit{\hmwkClassInstructor\ \hmwkClassTime}}
+        \vspace{3in}
+    }
+    
+    \author{\hmwkAuthorName}
+    \date{}
+    
+    \renewcommand{\part}[1]{\textbf{\large Part \Alph{partCounter}}\stepcounter{partCounter}\\}
+    
+\begin{document}
+\maketitle
+\pagebreak
+\section{Introduction Paragraph}
+\begin{itemize}
+    \item Present the topic: ``Is college worth the costs?''
+    \begin{itemize}
+        \item Mention high cost
+        \item Mention time to completion
+        \item Mention uncertainty of graduating
+    \end{itemize}
+    \item Thesis
+    \begin{itemize}
+        \item College, despite it's cost, is an investment of unquestionable 
+        worth both financially and personally.
+    \end{itemize}
+\end{itemize}
+\textbf{Over the course of the past century, college enrollment 
+has had a steady increase, independent of the ludicrous raise in cost
+of attendance. Pricing, in combination with duration, and the uncertainty
+of graduation makes it is easy to place doubt on the choice of 
+obtaining a bachelor's degree. Unintuitively, however, the worth of
+college has not yet morphed into debt, quite the opposite. College, 
+despite the sacrifices it entices, is an investment of unquestionable
+yields, which are not constrained solely to the financial aspects of life.
+}
+\section{Body Paragraph \#1}
+\begin{itemize}
+    \item Topic Sentence --- \textbf{The cost of college has, throughout the 
+    last century, risen well above the Consumer Price Index, yet it's Return on
+    Investment remains comfortably positive.}
+    \item Support
+    \begin{itemize}
+        \item See 6.2 and 6.3 of Essay 1 Proposal
+        \item “Is college worth it? Clearly, new data say” by David Leonhart
+        \item “Is it still worth going to college?” by Mary C. Daly \& Leila Bengali
+        \item This is probably the most empirical point in the essay. Here, 
+        clear data alone should suffice.
+    \end{itemize}
+\end{itemize}
+\section{Body Paragraph \#2}
+\begin{itemize}
+    \item Topic Sentence --- \textbf{In the current geopolitical arena, where
+    the main battle is for technological supremacy, skilled workers are more 
+    valuable than ever, making the struggle for a degree often times a 
+    patriotic one.}
+    \item Support
+    \begin{itemize}
+        \item See 6.1 of Essay 1 Proposal
+        \item “What’s the value of a college education” by Jennifer Barrett
+        \item The point here must be made in a purer form, relying less on
+        empiricism. An interesting point to make here is to show how the Cold War
+        was won with technology, which relies on graduates and universities,
+        and how today a new race is pacing with China, and once more it is only
+        with a qualified work force that the US will be able to maintain it's global
+        leadership.
+    \end{itemize}
+\end{itemize}
+\newpage
+\section{Body Paragraph \#3}
+\begin{itemize}
+    \item Topic Sentence --- \textbf{College has immaterial benefits, which is where it's
+    most fundamental value lies, for no other experience will provide you with the growth 
+    and improvement that college does.}
+    \item Support
+    \begin{itemize}
+        \item Here the argument should surround how attending college makes you a better
+        individual. Interesting points in this are:
+        \begin{itemize}
+            \item Better civic behavior (voting, running for local office, demonstrating)
+            \item Communication skills
+            \item Higher ability to help others in academic matters
+        \end{itemize}
+        \item Quotations for this point are scarce, however, Practical Argument does
+        contain a few segments in which better voting habits for college graduates is 
+        mentioned. If needed, seeking that out could be interesting.
+    \end{itemize}
+\end{itemize}
+\section{Refutation of Opposing Arguments}
+\begin{itemize}
+    \item ``College is too expensive'' --- The return on investment is still good, although 
+    not instantaneous
+    \item ``College takes too long'' --- The U.S. median life expectancy is of 80 years. 
+    The 4 years of college are a mere 5\% of that, and it has a highly positive 
+    impact on the future years. In fact, being a college graduate places you in a group 
+    with higher life expectancy.
+    \item ``You don't need College to be successful'' --- Point out fallacious 
+    cherry-picking of data, argue that, statistically, college \emph{does} improve your 
+    chances of success. Fundamentally, you don't truly \emph{need} anything to be successful, 
+    point being that the statement is meaningless. 
+\end{itemize}
+\section{Conclusion}
+\begin{enumerate}[label=\Alph*.]
+    \item Few experiences in life present one with an opportunity to attain both
+    financial and personal growth, and college is perhaps the most quintessential 
+    of them.
+    \item College rewards one economically, mentally, socially, and -- perhaps most
+    importantly -- helps one's country thrive. It's cost is but a speck in the vast
+    universe of benefits it provides.
+    \item The choice of getting a degree is under more fire now than ever before,
+    and yet it is still intrinsically valuable. Graduating is an enlightening and 
+    molding experience, that has shaped many of great women and men of this nation.  
+\end{enumerate}
+\end{document}  

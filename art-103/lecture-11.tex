@@ -1,0 +1,176 @@
+\documentclass{article}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Lecture Specific Information to Fill Out
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \newcommand{\LectureTitle}{Lecture \#11 Notes}
+    %\newcommand{\LectureDate}{\today}
+    \newcommand{\LectureDate}{October\ 4,\ 2017}
+    \newcommand{\LectureClassName}{ART\ 103}
+    \newcommand{\LatexerName}{Bernardo\ Meurer}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    % Change "article" to "report" to get rid of page number on title page
+    \usepackage{amsmath,amsfonts,amsthm,amssymb}
+    \usepackage{setspace}
+    \usepackage{Tabbing}
+    \usepackage{fancyhdr}
+    \usepackage{lastpage}
+    \usepackage{extramarks}
+    \usepackage{chngpage}
+    \usepackage{soul,color}
+    \usepackage{graphicx,float,wrapfig}
+    \usepackage{afterpage}
+    \usepackage{abstract}
+    
+    % In case you need to adjust margins:
+    \topmargin=-0.45in
+    \evensidemargin=0in
+    \oddsidemargin=0in
+    \textwidth=6.5in
+    \textheight=9.0in
+    \headsep=0.25in
+    
+    % Setup the header and footer
+    \pagestyle{fancy}
+    \lhead{\LatexerName}
+    \chead{\LectureClassName: \LectureTitle}
+    \rhead{\LectureDate}
+    \lfoot{\lastxmark}
+    \cfoot{}
+    \rfoot{Page\ \thepage\ of\ \pageref{LastPage}}
+    \renewcommand\headrulewidth{0.4pt}
+    \renewcommand\footrulewidth{0.4pt}
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Some tools
+    \newcommand{\enterTopicHeader}[1]{\nobreak\extramarks{#1}{#1 continued on next page\ldots}\nobreak%
+    \nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak}
+\newcommand{\exitTopicHeader}[1]{\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak%
+   \nobreak\extramarks{#1}{}\nobreak}
+
+\newlength{\labelLength}
+\newcommand{\labelAnswer}[2]
+{\settowidth{\labelLength}{#1}
+\addtolength{\labelLength}{0.25in}
+\changetext{}{-\labelLength}{}{}{}
+\noindent\fbox{\begin{minipage}[c]{\columnwidth}#2\end{minipage}}
+\marginpar{\fbox{#1}}
+
+% We put the blank space above in order to make sure this
+% \marginpar gets correctly placed.
+\changetext{}{+\labelLength}{}{}{}}
+
+\setcounter{secnumdepth}{0}
+\newcommand{\TopicName}{}
+\newcounter{TopicCounter}
+\newenvironment{Topic}[1][Problem \arabic{TopicCounter}]
+{\stepcounter{TopicCounter}
+\renewcommand{\TopicName}{#1}
+\section{\TopicName}
+\enterTopicHeader{\TopicName}}
+{\exitTopicHeader{\TopicName}}
+
+\setcounter{secnumdepth}{0}
+\newcommand{\ExampleSectionName}{}
+\newcounter{ExampleSectionCounter}[TopicCounter]
+\newenvironment{ExampleSection}[1][Example \arabic{ExampleSectionCounter}]
+{\stepcounter{ExampleSectionCounter}
+\renewcommand{\ExampleSectionName}{#1}
+\section{\ExampleSectionName}
+\enterTopicHeader{\ExampleSectionName}}
+{\exitTopicHeader{\ExampleSectionName}}
+
+\setcounter{secnumdepth}{0}
+\newcounter{ExampleBoxCounter}[TopicCounter]
+\newcommand{\examplebox}[1]
+{
+% We put this space here to make sure we're disconnected from the previous
+% passage
+\stepcounter{ExampleBoxCounter}
+\noindent\fbox{\begin{minipage}[c]{\columnwidth}#1\end{minipage}}\enterTopicHeader{\ExampleSectionName}\exitTopicHeader{\ExampleSectionName}\marginpar{\fbox{\#\arabic{ExampleBoxCounter}}}
+% We put the blank space above in order to make sure this
+% \marginpar gets correctly placed.
+\vskip10pt%
+}
+
+\renewcommand{\contentsname}{{\normalsize Topics Covered}}
+\renewcommand{\abstractname}{\LectureTitle\ Summary}
+\renewcommand{\absnamepos}{flushleft}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+    \begin{spacing}{1.2}
+    \newpage
+    \section{Ancient Greece}
+    \subsection{Geometric and Orientalizing}
+    \begin{flushright}
+        900 -- 600 BCE
+    \end{flushright}
+    The naming \emph{geometric} comes from the very, well, geometric shapes that are found throughout the work.
+
+    (5 -- 1) The parthenon's architect was Iktinos. There was a mathematical structure to the arrangement of columns and sizing of the temple. Moreover there was a sculptural programme throughout the temple. 
+
+    (5 -- 2) This is one of the earliest finds we have, and it is from a cemetery. Interestingly, this vessel has holes on the bottom, for reasons which are still not entirely clear. The key pattern on the top register of the vase is called a \emph{Miander}. The important this is the inclusion of the human figure into their artwork.
+
+    (5 -- 3) Here we see a hero and a centaur (possibly Herakles and Nessos). It is made of cast bronze. In this period of history, and as this sculpture suggests, nudity becomes very common in art. This is a very Greek idea, that showing someone unclothed is to show their true self in a way.
+
+    (5 -- 4) This is from the Orientalizing period, whose name comes from the influence Greece receives from Egypt and Mesopotamia. We are not sure whether this is Apollo, or a figure in devotion to him, although we do know it is related to Apollo due to the inscriptions on the figure's thighs.
+
+    (5 -- 5) What we specifically look at this \emph{amphora} are the creatures in it. This is a two-handle storage jar, and it shows the fascination with the orient because it has these composite creatures throughout it. This is a \emph{Corinthian}, which is the depiction of black/dark figures on vessels. This is a great example of how the greek were exposed to near eastern and asian motifs. 
+
+    There are different types of vase:
+    \begin{itemize}
+        \item Hydria
+        \begin{itemize}
+            \item Used for water
+        \end{itemize}
+        \item Lekythos
+        \item Krater
+        \item Amphora
+        \item Kylix
+        \begin{itemize}
+            \item Used for wine
+        \end{itemize}
+        \item Oenochoe
+    \end{itemize}
+    
+    (5 -- 5A) This is the first temple we found from the Orientalizing period. The interesting thing here is that the temple is very reminiscent of Mycenaean megarons.
+
+    (5 -- 5) Here we see a vase in orientalized style, which comes from the near-east and Egypt. 
+
+    (5 -- 6) This is a \emph{kore} (maid). 
+
+    \subsection{Archaic}
+    \begin{flushright}
+        600 - 480 BCE
+    \end{flushright}
+    (5 -- 7) He is a \emph{kouros}. The interesting this here is the stance he is in. Notice the locked knees, the foot forward, and the perfectly symmetrical hips. This is very reminiscent of the Egyptian sculptures, as we saw previously.
+
+    (5 -- 8) Here we see something very peculiar: he is smiling. This gives us something we did not have before, an expression of personality, which gives the sculpture a certain liveliness that we did not have before. This smile is called \emph{archaic smile}, which is very ``sweet''. 
+
+    (5 -- 9) This is a classic archaic sculpture. Here once more we see the archaic smile, the patterning in the hair and beard, and the ``egyptian'' stance. 
+
+    (5 -- 10) This is a kore wearing a \emph{peplos}, which is a type of garment. Once again we see the archaic smile. 
+
+    (5 -- 11) Here we see a kore in \emph{Ionian} dress. The interesting thing here is that the garment is more lively and more intricate.
+
+    (5 -- 12) Here we see the plan if a typical Greek peripteral temple. It is interesting to note that the Greeks did not go inside, but rather gathered outside to worship. Peripteral means the columns surround the temple, as opposed to the Etruscan temples with columns only in the entrance.
+
+    It is imporant to know that there are different orders of columns:
+    \begin{itemize}
+        \item Doric
+        \begin{itemize}
+            \item Very simple
+        \end{itemize}
+        \item Ionic
+        \begin{itemize}
+            \item Has swirls, which are called \emph{volutes} 
+        \end{itemize}
+        \item Corinthian
+        \begin{itemize}
+            \item Has \emph{Acanthus}, which are leaf-like.
+        \end{itemize}
+    \end{itemize}
+
+    \end{spacing}
+\end{document}

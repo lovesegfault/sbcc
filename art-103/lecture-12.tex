@@ -1,0 +1,138 @@
+\documentclass{article}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Lecture Specific Information to Fill Out
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \newcommand{\LectureTitle}{Lecture \#12 Notes}
+    %\newcommand{\LectureDate}{\today}
+    \newcommand{\LectureDate}{October\ 9,\ 2017}
+    \newcommand{\LectureClassName}{ART\ 103}
+    \newcommand{\LatexerName}{Bernardo\ Meurer}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    % Change "article" to "report" to get rid of page number on title page
+    \usepackage{amsmath,amsfonts,amsthm,amssymb}
+    \usepackage{setspace}
+    \usepackage{Tabbing}
+    \usepackage{fancyhdr}
+    \usepackage{lastpage}
+    \usepackage{extramarks}
+    \usepackage{chngpage}
+    \usepackage{soul,color}
+    \usepackage{graphicx,float,wrapfig}
+    \usepackage{afterpage}
+    \usepackage{abstract}
+    
+    % In case you need to adjust margins:
+    \topmargin=-0.45in
+    \evensidemargin=0in
+    \oddsidemargin=0in
+    \textwidth=6.5in
+    \textheight=9.0in
+    \headsep=0.25in
+    
+    % Setup the header and footer
+    \pagestyle{fancy}
+    \lhead{\LatexerName}
+    \chead{\LectureClassName: \LectureTitle}
+    \rhead{\LectureDate}
+    \lfoot{\lastxmark}
+    \cfoot{}
+    \rfoot{Page\ \thepage\ of\ \pageref{LastPage}}
+    \renewcommand\headrulewidth{0.4pt}
+    \renewcommand\footrulewidth{0.4pt}
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Some tools
+    \newcommand{\enterTopicHeader}[1]{\nobreak\extramarks{#1}{#1 continued on next page\ldots}\nobreak%
+    \nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak}
+\newcommand{\exitTopicHeader}[1]{\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak%
+   \nobreak\extramarks{#1}{}\nobreak}
+
+\newlength{\labelLength}
+\newcommand{\labelAnswer}[2]
+{\settowidth{\labelLength}{#1}
+\addtolength{\labelLength}{0.25in}
+\changetext{}{-\labelLength}{}{}{}
+\noindent\fbox{\begin{minipage}[c]{\columnwidth}#2\end{minipage}}
+\marginpar{\fbox{#1}}
+
+% We put the blank space above in order to make sure this
+% \marginpar gets correctly placed.
+\changetext{}{+\labelLength}{}{}{}}
+
+\setcounter{secnumdepth}{0}
+\newcommand{\TopicName}{}
+\newcounter{TopicCounter}
+\newenvironment{Topic}[1][Problem \arabic{TopicCounter}]
+{\stepcounter{TopicCounter}
+\renewcommand{\TopicName}{#1}
+\section{\TopicName}
+\enterTopicHeader{\TopicName}}
+{\exitTopicHeader{\TopicName}}
+
+\setcounter{secnumdepth}{0}
+\newcommand{\ExampleSectionName}{}
+\newcounter{ExampleSectionCounter}[TopicCounter]
+\newenvironment{ExampleSection}[1][Example \arabic{ExampleSectionCounter}]
+{\stepcounter{ExampleSectionCounter}
+\renewcommand{\ExampleSectionName}{#1}
+\section{\ExampleSectionName}
+\enterTopicHeader{\ExampleSectionName}}
+{\exitTopicHeader{\ExampleSectionName}}
+
+\setcounter{secnumdepth}{0}
+\newcounter{ExampleBoxCounter}[TopicCounter]
+\newcommand{\examplebox}[1]
+{
+% We put this space here to make sure we're disconnected from the previous
+% passage
+\stepcounter{ExampleBoxCounter}
+\noindent\fbox{\begin{minipage}[c]{\columnwidth}#1\end{minipage}}\enterTopicHeader{\ExampleSectionName}\exitTopicHeader{\ExampleSectionName}\marginpar{\fbox{\#\arabic{ExampleBoxCounter}}}
+% We put the blank space above in order to make sure this
+% \marginpar gets correctly placed.
+\vskip10pt%
+}
+
+\renewcommand{\contentsname}{{\normalsize Topics Covered}}
+\renewcommand{\abstractname}{\LectureTitle\ Summary}
+\renewcommand{\absnamepos}{flushleft}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+    \begin{spacing}{1.2}
+    \newpage
+        (5 -- 17) We will start seeing sculptures placed in the pediment. And what they will try to do is shape the figures to fit into the triangular pediment.
+
+        (5 -- 18) These female figures working as columns are called \emph{caryatids}.
+
+        (5 -- 19) Gigantomachy from the north frieze of the Siphnian Treasury. A Gigantomachy is a battle where giants are fighting humans.
+
+        (5 -- 19A?) Centauromachy: Humans fighting centaurs.
+
+        (5 -- 21) This is called a bilingual vase, because it has both black-figure and red-figure painting, one on each side of the vase. It was done by Lysippides (black figure) and Andokides (red figure). The transition from black figure to red figure was due to the fact that the incision technique used for decorating the black figures constrained the piece too much, with red figure the use of a brush allowed the painter much more freedom. One can see that the shoulder os the vase are repeated in the shape of the man depicted, and that the shape of the vase is also repeated in the empty space between them.
+        
+        (5 -- 24) Here we can really see how the Greek use the notion of space in their painting. We start seeing twisting and turning of the figures, which is something we had not seen before.
+
+        (5 -- 24?) This is the Temple of Aphaia. It's a 6 by 12 column temple, and this 1:2 ratio is something we start to observe in this period.
+
+        \subsection{Early and High Classical periods}
+
+        (5 -- 33) Here we start to see age.
+
+        (5 -- 35) What's interesting here is his right knee is bent. What this causes is a movement of the hip, making the figure stand in \emph{Contrapposto}, which adds more liveliness to the sculputre. One can see that he no longer has the sweet archaic smile, characterizing him as transitional piece. 
+
+        (5 -- 36) Here the bending of the knee advances much further, and we have a wonderful contrapposto stance. It's interesting to note that the depictions are very dispassionate, and the characters show no emotion.
+
+        (5 -- 40) We can see that although this piece is more naturalistic it is still not entirely there. What is interesting here is the repetition of lines wil the curve that forms through his back and arms. The greeks valued physical activity a lot, and sought after the perfect body and the perfect mind, in a concept of complete beauty.
+
+        (5 -- 41) Here again we see the idea of \emph{motion at rest}, which is very idiossyncratic of the classic sculptures.
+
+        (5 -- 42) This is called a \emph{herm}, which is a bust on a square base.
+
+        (5 -- 43) This is the Arcopolis
+
+        (5 -- 44) The Acropolis is elevated because of that idea of bringing the temples closer to God. 
+
+        (5 -- 52)
+    \end{spacing}
+\end{document}
