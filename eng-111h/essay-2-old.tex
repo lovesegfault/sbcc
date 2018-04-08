@@ -1,0 +1,71 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{ifpdf}
+\usepackage{mla}
+\usepackage{tikz}
+\usepackage{tkz-berge}
+\usetikzlibrary{positioning}
+\tikzset{LabelStyle/.style= {fill=white}}
+\tikzset{VertexStyle/.append style={minimum size=24pt}}
+\usepackage{todonotes}
+\usepackage{amsfonts}
+\usepackage{float}
+\usepackage{mathrsfs}
+\usepackage[pass]{geometry}
+\usepackage[hidelinks]{hyperref}
+
+\urlstyle{same}
+
+\begin{document}
+\begin{mla}{Bernardo}{Meurer}{Professor Eckford-Prossor}{English 111 H}{March 07, 2018}{Essay 2 --- Stub --- Of Satire and Its Function as an Ideological Bypass}
+    We see the world through Ideological Lens, that cause us to observe the world around us as being ``normal,'' in fact, Ideology itself is what causes us to define as normal that which we see daily and commonly. This idea, presented throughout Slavoj Žižek's work, is tightly knit with the Lacanian concept of the (big) Other, for Ideology becomes itself the symbolic order, which follows from a quasi-Wittgensteinian approach to to influence of the symbolic in the self. In distinction, the (little) other (notice the differentiation in the terms given by capitalization) refers solely to others as in other people, exteriorness. The Satirical has as its unifying feature the effort to subvert the Other (language), bypassing Ideology, in order to allow one to see oneself through the eyes of the other.
+
+    \todo{Shorten}As an experiment, in order to show the subversion of the Other, imagine the first Man \todo{Dedup}who, in his explorations, came across a strange, short, tree with uncommonly large, glossy leafs. On it grew, from some top branches that held a flower-like structure in its end, large groups of bow-shaped, cylinder-like, green and yellow semi-branches. The natives of this land seem to take only the semi-branches of a particular color, and open it to find a soft, white kernel which they eat. Although the description above might seem like that of an extraterrestrial encounter with a nature far differing from our own, with some good-faith one can see that, in fact, the banana tree is what's being described. The commonness of the banana makes it seem ordinary, but at first encounter and analysis it seems truly bizarre. There is no doubt that we are as bizarre to the unknown, as the unknown is to us. Žižek calls this filter and categorization of the normal  Ideology or the Ideological lens. Here, when we say Other, we refer to the Lacanian Big Other, or in Žižekian terms Ideology, Otherness is then partially related to the Wittgensteinian notion of means as a message. The little other, is yet another Lacanian concept that can be simplified as being just other people, so to speak of one's own otherness is to speak of one perceiving oneself through the eyes of the other, and breaking with the sense of normality that generally veils the analysis of that which is common or known. The idea we want to explore is that Satire subverts the Other (language) to allow the self to be seen thought the eyes of the other, and thus weakening the Borromean knot of reality by causing the Symbolic to disconnect with the Real.
+
+    \todo{Finish}The method of description works, because as Lacan shows us, and in opposition to Saussure's traditional work, language is not a sign-system, but a system of signifiers. When  we engage in the description method, we carefully leave out contextual bits of information, for they are what allow the signifiers to connect to their respective signifieds in the symbolic mapping of linguistics. Without the linking metadata attached to the signifiers, it becomes hard for the reader to identify the signifieds, which is exactly how the subversion takes place. Ideology, the Other, operates on the level of the signifieds, not of the signifiers, and therefore this layer of confusion allows us to bypass it. One will happily read an essay on how the Yahoos battle in the mud for stones, but not about how petty the bullionist philosophy is. If we construct the former essay carefully, it can become hard for the reader to detect the true signified, at which point we've successfully subverted language, allowing us to bypass his learned ideological filters.
+
+    \todo{Finish} Here, we can relate the Lacan-Saussure concept of signifier and signified to the Toulmin model. Toulmin's ``warrant'' is, in this context, what allows you to reach the signified from the signifier. Why, however, is it so easy to misinterpret someone's warrant, and therefore reach a different signified than was truly intended? Well, we can imagine the signifier and the signified as being two end nodes in an n-element graph. The task of arriving at the signified from the signifier, then, is equivalent to finding the simplest path that least from the signifier node to the signified node in our graph. This, in turn, is directly equivalent to the famed NP-Hard problem of the Traveling Salesman, which makes evident why tracing meaning is so hard.
+
+    To understand this point, we might be well served by drawing the structure of the graph that rules it.
+    \begin{figure}[H]
+        \centering
+        \begin{tikzpicture}[scale=0.955, every node/.style={scale=0.955}]
+            \SetVertexMath
+            \Vertex[x=0, y=0,L=\mathfrak{s}]{s}
+            \Loop[dist=1cm,label={$\mathfrak{s}$},style={thick,-}](s)
+            \Vertex[x=16, y=0,L=\mathscr{S}]{S}
+
+            \foreach \y [count=\n,evaluate={\m=int(6-\n)}] in {2,...,-2}
+                {\Vertex[x=2, y=\y, L=i_\n]{l1\m}
+                    \Edges(s, l1\m)}
+
+            \foreach \y [count=\n,evaluate={\m=int(8-\n)}] in {3,...,-3}
+                {\Vertex[x=4, y=\y, L=j_\n]{l2\m}
+                    \foreach \k in {1,...,5}
+                        {\Edges(l1\k, l2\m)}}
+
+            \foreach \y [count=\n,evaluate={\m=int(10-\n)}] in {4,...,-4}
+                {\Vertex[x=8, y=\y, L=k_\n]{l3\m}
+                    \foreach \k in {1,...,7}
+                        {\Edges(l2\k,l3\m)}}
+
+            \foreach \y [count=\n,evaluate={\m=int(12-\n)}] in {5,...,-5}
+            {\Vertex[x=13, y=\y, L=l_{\n}]{l4\m}
+            \draw[-,thick] (l4\m)--(S) node[midway,sloped,fill=white]{$\dots$};
+            \foreach \k in {1,...,9}
+                {\Edges(l3\k,l4\m)}}
+
+        \end{tikzpicture}
+        \caption{Graph of paths from the signifier \(\mathfrak{s}\) to the signified \(\mathscr{S}\)}\label{fig:graph}
+    \end{figure}
+    \noindent Here we can see that to reach the signified, \(\mathscr{S}\),
+    from the signifier, \(\mathfrak{s}\)
+
+    As we see in \textit{Body Ritual Among the Nacirema}, a veiled, yet accurate, description of ourselves can manage to bypass the ideological lens, at which point, and only by this means is this ever truly possible, we can look at ourselves and stand in awe of how bizarre we truly are. Even though Nacirema could be pointed out as not being a true satire, given that by most standards it isn't funny, it's impossible not to see the deeply satirical nature of it, and to draw some parallels with Gulliver's Travels. This same effect can be seen, for example, in the description of the Yahoos, and their addiction to colored stones, a painful description of nothing if ourselves, and in particular of the Bullionist theory that ruled the governing mindset in Swift's time. To bring it back to Lacanian terms, Satire allows us to lift the veil that is the Other (symbolic order) and, through a weakening of the Borromean ring, allow us to see the extraterraneousness of ourselves.
+
+    \todo{Shorten}We live in an age where the value for self-correction has been, by and large, left aside. Social media, with the echo-chambers it provides, has fostered a culture where self-validation through repetition and isolation is the norm. This, perhaps, explains why Satire has changed so much in it's form, we no longer see works like Swift's, or at least they don't rose to fame, because the fundamental dynamic that made it possible is gone. In Gulliver's Travels, we see Swift critique's of the English, and yet his reader is the Englishman himself. This is possible due to the ``veiled critique'' characteristic of his work, by which when the reader realizes he is being critiqued, it is far too late for he has already read and pondered on the work. This has become impossible, partially because the isolation aspect makes critical works, however veiled, difficult to reach their intended audience, but also because work that requires reading and pondering in extension has grown out of fashion. The ``instant delivery'' aspect of modern culture makes it unlikely that any meaningful number of people would go through the trouble of reading something that is longer than a couple of pages, which makes it increasingly harder to construct a through, veiled, and entertaining critique like Swift's work. Interestingly this has caused the satiric dynamic to change dramatically, now each respective side of an issue consumes the satire that was meant for their opponents, since they can and want to see the critique contained in it, as it feeds into their belief-loop. Because of this we have seen the slow disappearing of the veil, transforming satire into mere parody, as is clear from any number of late night shows, who would be categorized as satire, even if they are just comedic-political autofellatio.
+
+    Satire, given its kernel-factor as presented here, requires from the reader some a priori knowledge, namely, it requires some contextual awareness, but must importantly it takes interest in the other. Satire, once more, describes the self of the one being criticized as if it were the (little) other, and therefore it requires the reader to have some interest in the other, since that not being present would making reading the satire pointless at at first (given the delayed realization of the true meaning of the work.) Herein lies the cause for the slow, but steady, disappearance of satire: there is no longer any interest in the other. The central assumption that allows for the satirical delivery, and opens the reader to the material, is by and large gone, and so is true satire.
+
+\end{mla}
+\end{document}
