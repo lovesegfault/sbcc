@@ -217,3 +217,5 @@ TSWLatexianTemp*
 
 # expex forward references with \gathertags
 *-tags.tex
+
+__latexindent_temp.tex
